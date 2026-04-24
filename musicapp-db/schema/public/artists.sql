@@ -9,10 +9,18 @@ CREATE TABLE [public].[artists]
     , modified_by   TEXT                    NULL
 );
 
+/*
+-- ==================================
 -- TABLE COMMENT
+-- ==================================
+*/
 COMMENT ON TABLE artists IS 'Data about individual artists';
 
+/*
+-- ==================================
 -- FIELD COMMENTS
+-- ==================================
+*/
 COMMENT ON COLUMN artists.artist_id IS 'PK, SERIAL';
 COMMENT ON COLUMN artists.artist_name IS 'The name of the artist';
 COMMENT ON COLUMN artists.is_active IS 'Is the artist still making music';
