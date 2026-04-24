@@ -1,4 +1,4 @@
-CREATE TABLE [public].[artists]
+CREATE TABLE public.artists
 (
     artist_id       SERIAL PRIMARY KEY
     , artist_name   TEXT                NOT NULL
