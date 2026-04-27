@@ -1,3 +1,15 @@
+CREATE PROCEDURE login_user
+(
+    IN pUsername            VARCHAR(50)
+    , IN pPassword          BYTEA
+    , OUT poAuthenticated   BOOLEAN
+    , OUT poAuthExpiration  TIMESTAMPTZ
+    , OUT poIsAdmin         BOOLEAN
+    , OUT poErrorMessage    VARCHAR(255)
+)
+LANGUAGE plpgsql
+AS $$
+
 /*
 -- ======================================================
 -- Author:        Carlos Gonzalez
@@ -9,3 +21,13 @@
 -- 2026-04-26 - Carlos Gonzalez - Ported to Postgres
 -- ======================================================
 */
+
+DECLARE
+    vLoginId    INT     := NULL;
+    vIsActive   BOOLEAN := FALSE;
+    vIsAdmin    BOOLEAN := FALSE;
+
+BEGIN
+
+END;
+$$;

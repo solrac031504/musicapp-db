@@ -35,17 +35,17 @@ INCLUDE
 -- TABLE COMMENT
 -- ==================================
 */
-COMMENT ON user_login IS 'Site logins';
+COMMENT ON TABLE user_login IS 'Site logins';
 
 /*
 -- ==================================
 -- FIELD COMMENTS
 -- ==================================
 */
-COMMENT ON user_login.user_login_id     IS 'PK, IDENTITY';
-COMMENT ON user_login.username          IS 'The login username';
-COMMENT ON user_login.user_password     IS 'Hashed password';
-COMMENT ON user_login.login_count       IS 'How many times this login has been used to login';
-COMMENT ON user_login.last_login_date   IS 'When the login was last used in UTC';
-COMMENT ON user_login.is_active         IS 'Flags if the login is active';
-COMMENT ON user_login.is_admin          IS 'Flags if the login has administrative privileges in the app';
+COMMENT ON COLUMN user_login.user_login_id     IS 'PK, IDENTITY';
+COMMENT ON COLUMN user_login.username          IS 'The login username';
+COMMENT ON COLUMN user_login.user_password     IS 'Hashed password';
+COMMENT ON COLUMN user_login.login_count       IS 'How many times this login has been used to login';
+COMMENT ON COLUMN user_login.last_login_date   IS 'When the login was last used in UTC';
+COMMENT ON COLUMN user_login.is_active         IS 'Flags if the login is active';
+COMMENT ON COLUMN user_login.is_admin          IS 'Flags if the login has administrative privileges in the app';
