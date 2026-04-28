@@ -113,23 +113,23 @@ $$;
 -- PROC COMMENTS
 -- ==================================
 */
-COMMENT ON PROCEDURE user_login(VARCHAR(50), BYTEA, VARCHAR(50), BOOLEAN, TIMESTAMPTZ, BOOLEAN, VARCHAR(255))
+COMMENT ON PROCEDURE login_user(VARCHAR(50), BYTEA, VARCHAR(50), BOOLEAN, TIMESTAMPTZ, BOOLEAN, VARCHAR(255))
     IS 'Authenticates a user login and updates login stats';
 
-COMMENT ON PARAMETER user_login.pUsername
+COMMENT ON PARAMETER login_user.pUsername
     IS 'Username being logged in';
 
-COMMENT ON PARAMETER user_login.pPassword
+COMMENT ON PARAMETER login_user.pPassword
     IS 'Password used to login';
 
-COMMENT ON PARAMETER user_login.poAuthenticated
+COMMENT ON PARAMETER login_user.poAuthenticated
     IS 'Outputs if the login was successfully authenticated';
 
-COMMENT ON PARAMETER user_login.poAuthExpiration
+COMMENT ON PARAMETER login_user.poAuthExpiration
     IS 'Returns when the login will expire. When expired, the website will requier the user to login again';
 
-COMMENT ON PARAMETER user_login.poIsAdmin
+COMMENT ON PARAMETER login_user.poIsAdmin
     IS 'Outputs if the user is a website admin';
 
-COMMENT ON PARAMETER user_login.poErrorMessage
+COMMENT ON PARAMETER login_user.poErrorMessage
     IS 'Outputs any error messages that may occur';
