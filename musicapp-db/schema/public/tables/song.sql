@@ -16,7 +16,7 @@ CREATE TABLE song
     , created_by            VARCHAR(255)    NOT NULL    DEFAULT (CURRENT_USER)
     , modified_utc          TIMESTAMPTZ         NULL
     , modified_by           VARCHAR(255)        NULL
-    , CONSTRAINT pk_song PRIMARY KEY (song)
+    , CONSTRAINT pk_song PRIMARY KEY (song_id)
 );
 
 /*
@@ -27,7 +27,7 @@ CREATE TABLE song
 ALTER TABLE song
 ADD CONSTRAINT fk_song_artist_group_id
 FOREIGN KEY (artist_group_id)
-REFERENCES music_group (artist_group_id);
+REFERENCES artist_group (artist_group_id);
 
 ALTER TABLE song
 ADD CONSTRAINT fk_song_project_id

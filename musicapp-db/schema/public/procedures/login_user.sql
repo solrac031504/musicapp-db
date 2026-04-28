@@ -75,10 +75,10 @@ BEGIN
         UPDATE
             user_login AS u
         SET
-            last_login_date = CURRENT_TIMESTAMP AT TIME ZONE 'UTC';
-            login_count = u.login_count + 1,
-            modified_by = current_user,
-            modified_utc = CURRENT_TIMESTAMP AT TIME ZONE 'UTC'
+            last_login_date = CURRENT_TIMESTAMP AT TIME ZONE 'UTC'
+            , login_count = u.login_count + 1
+            , modified_by = current_user
+            , modified_utc = CURRENT_TIMESTAMP AT TIME ZONE 'UTC'
         WHERE
             u.user_login_id = vLoginId
         ;
