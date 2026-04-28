@@ -1,0 +1,28 @@
+name: Database Migrations
+
+on:
+    push:
+        branches:
+            - main
+        paths:
+            - 'migrations/**'
+
+jobs:
+    migrate:
+        name: Run Flyway Migrations
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Checkout repo
+              uses: actions/checkout@v4
+
+            - name: Run Flyway migrations
+              uses: docker://flyway/flyway:11
+              with:
+                args: -url=${{ secrets.FLYWAY_URL }} -user=${{ secrets.FLYWAY_USER }} -password=${{ secrets.FLYWAY_PASSWORD }} -locations=filesystem:/github/workspace/migrations migrate
+
+            - name: Print migration info
+              if: always()
+              uses: docker://flyway/flyway:11
+              with:
+                args: -url=${{ secrets.FLYWAY_URL }} -user=${{ secrets.FLYWAY_USER }} -password=${{ secrets.FLYWAY_PASSWORD }} -locations=filesystem:/github/workspace/migrations info
