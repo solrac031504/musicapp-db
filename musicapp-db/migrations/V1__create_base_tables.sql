@@ -208,7 +208,7 @@ CREATE TABLE streaming_service
 
 COMMENT ON TABLE streaming_service                          IS 'The StreamingService streaming service source';
 COMMENT ON COLUMN streaming_service.streaming_service_id    IS 'PK, IDENTITY';
-COMMENT ON COLUMN streaming_service.service_name            IS 'The name of the source streaming service';
+COMMENT ON COLUMN streaming_service.streaming_service_name  IS 'The name of the source streaming service';
 COMMENT ON COLUMN streaming_service.created_utc             IS 'When the record was created in UTC';
 COMMENT ON COLUMN streaming_service.created_by              IS 'Who created the record';
 COMMENT ON COLUMN streaming_service.modified_utc            IS 'When the record was modified in UTC';
