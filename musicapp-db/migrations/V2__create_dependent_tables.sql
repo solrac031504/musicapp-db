@@ -160,7 +160,7 @@ CREATE TABLE song
     , producer_group_id     INT                 NULL
     , genre_id              INT             NOT NULL
     , scene_id              INT                 NULL
-    , service_id            INT             NOT NULL
+    , streaming_service_id INT             NOT NULL
     , duration              INT             NOT NULL
     , rating                NUMERIC(4, 2)       NULL
     , is_added              BOOLEAN         NOT NULL    DEFAULT (FALSE)
@@ -198,9 +198,9 @@ FOREIGN KEY (scene_id)
 REFERENCES scene (scene_id);
 
 ALTER TABLE song
-ADD CONSTRAINT fk_song_service_id
-FOREIGN KEY (service_id)
-REFERENCES streaming_service (service_id);
+ADD CONSTRAINT fk_song_streaming_service_id
+FOREIGN KEY (streaming_service_id)
+REFERENCES streaming_service (streaming_service_id);
 
 ALTER TABLE song
 ADD CONSTRAINT ck_song_rating
@@ -218,7 +218,7 @@ COMMENT ON COLUMN song.project_id           IS 'The project the song belongs to.
 COMMENT ON COLUMN song.producer_group_id    IS 'The group of producers/producer that produced the song. References producer_group';
 COMMENT ON COLUMN song.genre_id             IS 'The genre of the song. References genre';
 COMMENT ON COLUMN song.scene_id             IS 'The scene of the song. References scene';
-COMMENT ON COLUMN song.service_id           IS 'The source streaming service of the song. Local files are ported from other streaming services if they are not from Apple Music. References streaming_service';
+COMMENT ON COLUMN song.streaming_service_id IS 'The source streaming service of the song. Local files are ported from other streaming services if they are not from Apple Music. References streaming_service';
 COMMENT ON COLUMN song.duration             IS 'How long the song lasts in seconds';
 COMMENT ON COLUMN song.rating               IS 'The song rating out of 10';
 COMMENT ON COLUMN song.is_added             IS 'Flag if the song is or is not added in my library';
