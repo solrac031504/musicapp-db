@@ -113,7 +113,7 @@ $$;
 -- PROC COMMENTS
 -- ==================================
 */
-COMMENT ON PROCEDURE login_user(VARCHAR(50), BYTEA, VARCHAR(50), BOOLEAN, TIMESTAMPTZ, BOOLEAN, VARCHAR(255))
+COMMENT ON PROCEDURE login_user(VARCHAR(50), BYTEA, BOOLEAN, TIMESTAMPTZ, BOOLEAN, VARCHAR(255))
     IS 'Authenticates a user login and updates login stats';
 
 COMMENT ON PARAMETER login_user.pUsername
