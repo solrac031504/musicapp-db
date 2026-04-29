@@ -10,17 +10,6 @@
 CREATE VIEW vw_genre_hierarchy
 AS
 
-/*
--- ======================================================
--- Author:        Carlos Gonzalez
--- Date Created:  2025-12-21
--- Description:   Displays the full hierarchy of the Genres and the root genre they fall under
----------------------------------------------------------
--- YYYY-MM-DD - Author - Change
--- 2026-04-26 - Carlos Gonzalez - Ported to postgres
--- ======================================================
-*/
-
 WITH cte_genre_hierarchy AS
 (
     -- Anchor: Get all root nodes (genres with no parent, i.e., parent_genre_id = -1)
