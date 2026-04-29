@@ -1,0 +1,144 @@
+/*
+-- ==================================
+-- V4__create_procedures.sql
+-- Creates all stored procedures.
+-- Procedures: login_user
+-- Depends on: user_login
+-- ==================================
+*/
+
+CREATE PROCEDURE login_user
+(
+    IN pUsername            VARCHAR(50)
+    , IN pPassword          BYTEA
+    , OUT poAuthenticated   BOOLEAN
+    , OUT poAuthExpiration  TIMESTAMPTZ
+    , OUT poIsAdmin         BOOLEAN
+    , OUT poErrorMessage    VARCHAR(255)
+)
+LANGUAGE plpgsql
+AS $$
+
+/*
+-- ======================================================
+-- Author:        Carlos Gonzalez
+-- Date Created:  2025-12-13
+-- Description:   Login a user and update the count, time, and origin of the last login
+---------------------------------------------------------
+-- YYYY-MM-DD - Author - Change
+-- 2025-12-20 - Carlos Gonzalez - Added output error message, admin flag, and login expiration datetime
+-- 2026-04-26 - Carlos Gonzalez - Ported to Postgres
+-- ======================================================
+*/
+
+DECLARE
+    vLoginId    INT     := NULL;
+    vIsActive   BOOLEAN := FALSE;
+    vIsAdmin    BOOLEAN := FALSE;
+
+BEGIN
+
+    -- Initialize output params
+    poAuthenticated     := FALSE;
+    poAuthExpiration    := NULL;
+    poIsAdmin           := FALSE;
+    poErrorMessage      := NULL;
+
+    -- Get the user
+    SELECT
+        u.user_login_id
+        , u.is_admin
+        , u.is_active
+    INTO
+        vLoginId
+        , vIsAdmin
+        , vIsActive
+    FROM
+        user_login AS u
+    WHERE
+        1=1
+        AND u.username = pUsername
+        AND u.user_password = pPassword
+    ;
+
+    /*
+    -- ======================================================
+    -- Check if user exists
+    -- ======================================================
+    */
+    IF vLoginId IS NULL THEN
+        RAISE EXCEPTION 'Invalid username or password';
+    END IF;
+
+    /*
+    -- ======================================================
+    -- If the user exists and is active, set auth = TRUE and update login
+    -- ======================================================
+    */
+    poAuthenticated := TRUE;
+    poAuthExpiration := CURRENT_TIMESTAMP AT TIME ZONE 'UTC' + INTERVAL '2 hours';
+    poIsAdmin := vIsAdmin;
+
+    BEGIN
+
+        UPDATE
+            user_login AS u
+        SET
+            last_login_date = CURRENT_TIMESTAMP AT TIME ZONE 'UTC'
+            , login_count = u.login_count + 1
+            , modified_by = current_user
+            , modified_utc = CURRENT_TIMESTAMP AT TIME ZONE 'UTC'
+        WHERE
+            u.user_login_id = vLoginId
+        ;
+
+        -- Check if the update was successful
+        IF NOT FOUND THEN
+            RAISE EXCEPTION 'Failed to update login information';
+        END IF;
+    EXCEPTION
+        WHEN OTHERS THEN
+            -- Capture error message
+            poErrorMessage := SQLERRM;
+            poAuthenticated := FALSE;
+            poAuthExpiration := NULL;
+            poIsAdmin := FALSE;
+            RAISE;
+    END;
+
+EXCEPTION
+    WHEN OTHERS THEN
+        -- Capture error message
+            poErrorMessage := SQLERRM;
+            poAuthenticated := FALSE;
+            poAuthExpiration := NULL;
+            poIsAdmin := FALSE;
+            RAISE;
+END;
+$$;
+
+/*
+-- ==================================
+-- PROC COMMENTS
+-- ==================================
+*/
+COMMENT ON PROCEDURE login_user(VARCHAR(50), BYTEA, VARCHAR(50), BOOLEAN, TIMESTAMPTZ, BOOLEAN, VARCHAR(255))
+    IS 'Authenticates a user login and updates login stats';
+
+COMMENT ON PARAMETER login_user.pUsername
+    IS 'Username being logged in';
+
+COMMENT ON PARAMETER login_user.pPassword
+    IS 'Password used to login';
+
+COMMENT ON PARAMETER login_user.poAuthenticated
+    IS 'Outputs if the login was successfully authenticated';
+
+COMMENT ON PARAMETER login_user.poAuthExpiration
+    IS 'Returns when the login will expire. When expired, the website will requier the user to login again';
+
+COMMENT ON PARAMETER login_user.poIsAdmin
+    IS 'Outputs if the user is a website admin';
+
+COMMENT ON PARAMETER login_user.poErrorMessage
+    IS 'Outputs any error messages that may occur';

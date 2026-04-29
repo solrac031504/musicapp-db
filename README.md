@@ -1,2 +1,3 @@
 # musicapp-db
-Database for my MusicApp
+
+Database for MusicApp — PostgreSQL, managed with [Flyway](https://flywaydb.org/).
