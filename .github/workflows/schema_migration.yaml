@@ -11,7 +11,7 @@ on:
 jobs:
     migrate:
         name: Run Flyway Migrations
-        runs-on: ubuntu-latest
+        runs-on: self-hosted
 
         env:
           FLYWAY_URL: ${{ github.ref_name == 'main' && secrets.FLYWAY_URL_PROD || secrets.FLYWAY_URL_DEV}}
