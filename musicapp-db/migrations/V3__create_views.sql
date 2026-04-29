@@ -10,7 +10,7 @@
 CREATE VIEW vw_genre_hierarchy
 AS
 
-WITH cte_genre_hierarchy AS
+WITH RECURSIVE cte_genre_hierarchy AS
 (
     -- Anchor: Get all root nodes (genres with no parent, i.e., parent_genre_id = -1)
     SELECT
