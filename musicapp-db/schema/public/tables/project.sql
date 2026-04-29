@@ -20,8 +20,8 @@ CREATE TABLE project
 -- ==================================
 */
 ALTER TABLE project
-ADD CONSTRAINT fk_project_group_id
-FOREIGN KEY (group_id)
+ADD CONSTRAINT fk_project_artist_group_id
+FOREIGN KEY (artist_group_id)
 REFERENCES artist_group (artist_group_id);
  
 ALTER TABLE project
