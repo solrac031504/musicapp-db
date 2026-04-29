@@ -6,7 +6,7 @@ on:
             - main
             - dev
         paths:
-            - 'migrations/**'
+            - 'musicapp-db/migrations/**'
 
 jobs:
     migrate:
