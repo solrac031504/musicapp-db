@@ -25,11 +25,11 @@ SELECT * FROM producer_group_membership;
 -- Drop existing tables and dependent objects
 -- ==================================
 */
+DROP VIEW vw_genre_hierarchy;
+
 DROP TABLE artist_group_membership;
 DROP TABLE genre_hierarchy;
 DROP TABLE producer_group_membership;
-
-DROP VIEW vw_genre_hierarchy;
 
 /*
 -- ==================================
