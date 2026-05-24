@@ -19,6 +19,7 @@ AS $$
 -- YYYY-MM-DD - Author - Change
 -- 2025-12-20 - Carlos Gonzalez - Added output error message, admin flag, and login expiration datetime
 -- 2026-04-26 - Carlos Gonzalez - Ported to Postgres
+-- 2026-05-24 - Carlos Gonzalez - Corrected transactional logic, added missing active check, and prevented error on login miss
 -- ======================================================
 */
 
@@ -58,7 +59,18 @@ BEGIN
     -- ======================================================
     */
     IF vLoginId IS NULL THEN
-        RAISE EXCEPTION 'Invalid username or password';
+        poErrorMessage := 'Invalid username or password';
+        RETURN;
+    END IF;
+
+    /*
+    -- ======================================================
+    -- Check if user is active
+    -- ======================================================
+    */
+    IF NOT vIsActive THEN
+        poErrorMessage := 'Login has been deactivated';
+        RETURN;
     END IF;
 
     /*
@@ -70,32 +82,16 @@ BEGIN
     poAuthExpiration := CURRENT_TIMESTAMP AT TIME ZONE 'UTC' + INTERVAL '2 hours';
     poIsAdmin := vIsAdmin;
 
-    BEGIN
-
-        UPDATE
-            user_login AS u
-        SET
-            last_login_date = CURRENT_TIMESTAMP AT TIME ZONE 'UTC'
-            , login_count = u.login_count + 1
-            , modified_by = current_user
-            , modified_utc = CURRENT_TIMESTAMP AT TIME ZONE 'UTC'
-        WHERE
-            u.user_login_id = vLoginId
-        ;
-
-        -- Check if the update was successful
-        IF NOT FOUND THEN
-            RAISE EXCEPTION 'Failed to update login information';
-        END IF;
-    EXCEPTION
-        WHEN OTHERS THEN
-            -- Capture error message
-            poErrorMessage := SQLERRM;
-            poAuthenticated := FALSE;
-            poAuthExpiration := NULL;
-            poIsAdmin := FALSE;
-            RAISE;
-    END;
+    UPDATE
+        user_login AS u
+    SET
+        last_login_date = CURRENT_TIMESTAMP AT TIME ZONE 'UTC'
+        , login_count = u.login_count + 1
+        , modified_by = current_user
+        , modified_utc = CURRENT_TIMESTAMP AT TIME ZONE 'UTC'
+    WHERE
+        u.user_login_id = vLoginId
+    ;
 
 EXCEPTION
     WHEN OTHERS THEN
