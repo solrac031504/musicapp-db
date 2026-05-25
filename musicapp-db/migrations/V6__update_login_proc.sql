@@ -1,4 +1,12 @@
-CREATE PROCEDURE login_user
+/*
+-- ==================================
+-- V6__update_login_proc.sql
+-- Changes composite primary keys in many-to-many joining tables to a single primary surrogate key with a unique index.
+-- Procedures: login_user
+-- ==================================
+*/
+
+CREATE OR REPLACE PROCEDURE login_user
 (
     IN pUsername            VARCHAR(50)
     , IN pPassword          BYTEA
