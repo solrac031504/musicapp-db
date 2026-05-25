@@ -1,13 +1,17 @@
 name: MusicApp-Database CI
 
 on:
-  push:
+  pull_request:
     branches:
       - main
       - dev
     paths:
       - 'musicapp-db/migrations/**'
       - 'musicapp-db/schema/**'
+    types:
+      - opened
+      - synchronize
+      - reopened
 
 jobs:
   migrate:
