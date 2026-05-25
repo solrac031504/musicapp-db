@@ -4,8 +4,5 @@
         "editor.defaultFormatter": "github.vscode-github-actions",
         "editor.tabSize": 2,
         "editor.insertSpaces": true
-    },
-    "[sql]": {
-        
     }
 }
