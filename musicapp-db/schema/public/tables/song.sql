@@ -7,7 +7,7 @@ CREATE TABLE song
     , producer_group_id     INT                 NULL
     , genre_id              INT             NOT NULL
     , scene_id              INT                 NULL
-    , service_id            INT             NOT NULL
+    , streaming_service_id  INT             NOT NULL
     , duration              INT             NOT NULL
     , rating                NUMERIC(4, 2)       NULL
     , is_added              BOOLEAN         NOT NULL    DEFAULT (FALSE)
@@ -51,8 +51,8 @@ REFERENCES scene (scene_id);
 
 ALTER TABLE song
 ADD CONSTRAINT fk_song_service_id
-FOREIGN KEY (service_id)
-REFERENCES streaming_service (service_id);
+FOREIGN KEY (streaming_service_id)
+REFERENCES streaming_service (streaming_service_id);
 
 ALTER TABLE song
 ADD CONSTRAINT ck_song_rating
