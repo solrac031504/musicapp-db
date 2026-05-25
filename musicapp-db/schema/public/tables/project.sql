@@ -27,7 +27,7 @@ REFERENCES artist_group (artist_group_id);
 ALTER TABLE project
 ADD CONSTRAINT fk_project_scene_id
 FOREIGN KEY (scene_id)
-REFERENCES genre (genre_id);
+REFERENCES scene (scene_id);
  
 ALTER TABLE project
 ADD CONSTRAINT fk_project_project_type_id
