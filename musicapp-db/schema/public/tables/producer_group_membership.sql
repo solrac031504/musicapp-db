@@ -50,7 +50,7 @@ COMMENT ON TABLE producer_group_membership IS 'Tracks producer memberships in gr
 -- TRIGGER
 -- ==================================
 */
-CREATE OR REPLACE trg_producer_group_membership_set_modified_utc
+CREATE TRIGGER trg_producer_group_membership_set_modified_utc
     AFTER UPDATE ON producer_group_membership
     FOR EACH ROW
     EXECUTE FUNCTION set_modified_utc();

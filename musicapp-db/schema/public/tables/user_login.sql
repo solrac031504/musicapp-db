@@ -55,7 +55,7 @@ COMMENT ON COLUMN user_login.is_admin          IS 'Flags if the login has admini
 -- TRIGGER
 -- ==================================
 */
-CREATE OR REPLACE trg_user_login_set_modified_utc
+CREATE TRIGGER trg_user_login_set_modified_utc
     AFTER UPDATE ON user_login
     FOR EACH ROW
     EXECUTE FUNCTION set_modified_utc();

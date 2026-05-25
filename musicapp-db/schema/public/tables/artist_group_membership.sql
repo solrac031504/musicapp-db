@@ -49,7 +49,7 @@ COMMENT ON TABLE artist_group_membership IS 'Tracks artist memberships in groups
 -- TRIGGER
 -- ==================================
 */
-CREATE OR REPLACE trg_artist_group_membership_set_modified_utc
+CREATE TRIGGER trg_artist_group_membership_set_modified_utc
     AFTER UPDATE ON artist_group_membership
     FOR EACH ROW
     EXECUTE FUNCTION set_modified_utc();

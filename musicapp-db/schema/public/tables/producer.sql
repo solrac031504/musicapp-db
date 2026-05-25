@@ -35,7 +35,7 @@ COMMENT ON COLUMN producer.modified_by   IS 'Who modified the record';
 -- TRIGGER
 -- ==================================
 */
-CREATE OR REPLACE trg_producer_set_modified_utc
+CREATE TRIGGER trg_producer_set_modified_utc
     AFTER UPDATE ON producer
     FOR EACH ROW
     EXECUTE FUNCTION set_modified_utc();

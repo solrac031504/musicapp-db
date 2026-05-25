@@ -37,7 +37,7 @@ COMMENT ON COLUMN scene.modified_by   IS 'Who modified the record';
 -- TRIGGER
 -- ==================================
 */
-CREATE OR REPLACE trg_scene_set_modified_utc
+CREATE TRIGGER trg_scene_set_modified_utc
     AFTER UPDATE ON scene
     FOR EACH ROW
     EXECUTE FUNCTION set_modified_utc();

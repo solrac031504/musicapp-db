@@ -33,7 +33,7 @@ COMMENT ON COLUMN project_type.modified_by       IS 'Who modified the record';
 -- TRIGGER
 -- ==================================
 */
-CREATE OR REPLACE trg_project_type_set_modified_utc
+CREATE TRIGGER trg_project_type_set_modified_utc
     AFTER UPDATE ON project_type
     FOR EACH ROW
     EXECUTE FUNCTION set_modified_utc();

@@ -23,7 +23,7 @@ COMMENT ON COLUMN streaming_service.modified_by             IS 'Who modified the
 -- TRIGGER
 -- ==================================
 */
-CREATE OR REPLACE trg_streaming_service_set_modified_utc
+CREATE TRIGGER trg_streaming_service_set_modified_utc
     AFTER UPDATE ON streaming_service
     FOR EACH ROW
     EXECUTE FUNCTION set_modified_utc();
