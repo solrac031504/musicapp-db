@@ -41,4 +41,4 @@ jobs:
             -url=${{ env.FLYWAY_URL }} 
             -user=${{ secrets.FLYWAY_USER }} 
             -password=${{ secrets.FLYWAY_PASSWORD }} 
-            -locations=filesystem:/github/workspace/musicapp-db/migrations validate -ignoreMigrationPatterns='*:pending'
+            -locations=filesystem:/github/workspace/musicapp-db/migrations validate -ignoreMigrationPatterns="*:pending"
