@@ -29,3 +29,13 @@ COMMENT ON COLUMN artist_group.created_utc          IS 'When the record was crea
 COMMENT ON COLUMN artist_group.created_by           IS 'Who created the record';
 COMMENT ON COLUMN artist_group.modified_utc         IS 'When the record was modified in UTC';
 COMMENT ON COLUMN artist_group.modified_by          IS 'Who modified the record';
+
+/*
+-- ==================================
+-- TRIGGER
+-- ==================================
+*/
+CREATE TRIGGER trg_artist_group_set_modified_utc
+    AFTER UPDATE ON artist_group
+    FOR EACH ROW
+    EXECUTE FUNCTION set_modified_utc();

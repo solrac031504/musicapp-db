@@ -27,7 +27,7 @@ REFERENCES artist_group (artist_group_id);
 ALTER TABLE project
 ADD CONSTRAINT fk_project_scene_id
 FOREIGN KEY (scene_id)
-REFERENCES genre (genre_id);
+REFERENCES scene (scene_id);
  
 ALTER TABLE project
 ADD CONSTRAINT fk_project_project_type_id
@@ -57,3 +57,13 @@ COMMENT ON COLUMN project.created_utc     IS 'When the record was created in UTC
 COMMENT ON COLUMN project.created_by      IS 'Who created the record';
 COMMENT ON COLUMN project.modified_utc    IS 'When the record was modified in UTC';
 COMMENT ON COLUMN project.modified_by     IS 'Who modified the record';
+
+/*
+-- ==================================
+-- TRIGGER
+-- ==================================
+*/
+CREATE TRIGGER trg_project_set_modified_utc
+    AFTER UPDATE ON project
+    FOR EACH ROW
+    EXECUTE FUNCTION set_modified_utc();

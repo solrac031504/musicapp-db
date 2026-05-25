@@ -1,16 +1,21 @@
-name: Database Migrations
+name: MusicApp-Database CI
 
 on:
-  push:
+  pull_request:
     branches:
       - main
       - dev
     paths:
       - 'musicapp-db/migrations/**'
+      - 'musicapp-db/schema/**'
+    types:
+      - opened
+      - synchronize
+      - reopened
 
 jobs:
   migrate:
-    name: Run Flyway Migrations
+    name: musicapp-db-validation
     runs-on: self-hosted
 
     env:
@@ -20,17 +25,7 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v4
 
-      - name: Run Flyway migrations
-        uses: docker://flyway/flyway:11
-        with:
-          args: >-
-            -url=${{ env.FLYWAY_URL }} 
-            -user=${{ secrets.FLYWAY_USER }} 
-            -password=${{ secrets.FLYWAY_PASSWORD }} 
-            -locations=filesystem:/github/workspace/musicapp-db/migrations migrate
-
-      - name: Print migration info
-        if: always()
+      - name: Display current migration info
         uses: docker://flyway/flyway:11
         with:
           args: >-
@@ -38,3 +33,12 @@ jobs:
             -user=${{ secrets.FLYWAY_USER }} 
             -password=${{ secrets.FLYWAY_PASSWORD }} 
             -locations=filesystem:/github/workspace/musicapp-db/migrations info
+
+      - name: Validate database and migrations
+        uses: docker://flyway/flyway:11
+        with:
+          args: >-
+            -url=${{ env.FLYWAY_URL }} 
+            -user=${{ secrets.FLYWAY_USER }} 
+            -password=${{ secrets.FLYWAY_PASSWORD }} 
+            -locations=filesystem:/github/workspace/musicapp-db/migrations validate -ignoreMigrationPatterns="*:pending"

@@ -56,3 +56,13 @@ COMMENT ON COLUMN genre_hierarchy.created_utc     IS 'When the record was create
 COMMENT ON COLUMN genre_hierarchy.created_by      IS 'Who created the record';
 COMMENT ON COLUMN genre_hierarchy.modified_utc    IS 'When the record was modified in UTC';
 COMMENT ON COLUMN genre_hierarchy.modified_by     IS 'Who modified the record';
+
+/*
+-- ==================================
+-- TRIGGER
+-- ==================================
+*/
+CREATE TRIGGER trg_genre_hierarchy_set_modified_utc
+    AFTER UPDATE ON genre_hierarchy
+    FOR EACH ROW
+    EXECUTE FUNCTION set_modified_utc();

@@ -44,3 +44,13 @@ REFERENCES producer (producer_id);
 -- ==================================
 */
 COMMENT ON TABLE producer_group_membership IS 'Tracks producer memberships in groups';
+
+/*
+-- ==================================
+-- TRIGGER
+-- ==================================
+*/
+CREATE TRIGGER trg_producer_group_membership_set_modified_utc
+    AFTER UPDATE ON producer_group_membership
+    FOR EACH ROW
+    EXECUTE FUNCTION set_modified_utc();

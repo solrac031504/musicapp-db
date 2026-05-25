@@ -49,3 +49,13 @@ COMMENT ON COLUMN user_login.login_count       IS 'How many times this login has
 COMMENT ON COLUMN user_login.last_login_date   IS 'When the login was last used in UTC';
 COMMENT ON COLUMN user_login.is_active         IS 'Flags if the login is active';
 COMMENT ON COLUMN user_login.is_admin          IS 'Flags if the login has administrative privileges in the app';
+
+/*
+-- ==================================
+-- TRIGGER
+-- ==================================
+*/
+CREATE TRIGGER trg_user_login_set_modified_utc
+    AFTER UPDATE ON user_login
+    FOR EACH ROW
+    EXECUTE FUNCTION set_modified_utc();
