@@ -15,7 +15,7 @@ on:
 
 jobs:
   migrate:
-    name: Run Flyway Migrations
+    name: musicapp-db-validation
     runs-on: self-hosted
 
     env:
