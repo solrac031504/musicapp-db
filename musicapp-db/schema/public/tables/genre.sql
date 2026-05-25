@@ -29,3 +29,13 @@ COMMENT ON COLUMN genre.created_utc IS 'When the record was created in UTC';
 COMMENT ON COLUMN genre.created_by  IS 'Who created the record';
 COMMENT ON COLUMN genre.modified_utc IS 'When the record was modified in UTC';
 COMMENT ON COLUMN genre.modified_by  IS 'Who modified the record';
+
+/*
+-- ==================================
+-- TRIGGER
+-- ==================================
+*/
+CREATE OR REPLACE trg_genre_set_modified_utc
+    AFTER UPDATE ON genre
+    FOR EACH ROW
+    EXECUTE FUNCTION set_modified_utc();

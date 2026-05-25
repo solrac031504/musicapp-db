@@ -62,7 +62,7 @@ COMMENT ON COLUMN genre_hierarchy.modified_by     IS 'Who modified the record';
 -- TRIGGER
 -- ==================================
 */
-CREATE OR REPLACE trg_artist_set_modified_utc
+CREATE OR REPLACE trg_genre_hierarchy_set_modified_utc
     AFTER UPDATE ON genre_hierarchy
     FOR EACH ROW
     EXECUTE FUNCTION set_modified_utc();

@@ -90,3 +90,13 @@ COMMENT ON COLUMN song.created_utc       IS 'When the record was created in UTC'
 COMMENT ON COLUMN song.created_by        IS 'Who created the record';
 COMMENT ON COLUMN song.modified_utc      IS 'When the record was modified in UTC';
 COMMENT ON COLUMN song.modified_by       IS 'Who modified the record';
+
+/*
+-- ==================================
+-- TRIGGER
+-- ==================================
+*/
+CREATE OR REPLACE trg_song_set_modified_utc
+    AFTER UPDATE ON song
+    FOR EACH ROW
+    EXECUTE FUNCTION set_modified_utc();

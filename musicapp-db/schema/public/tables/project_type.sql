@@ -27,3 +27,13 @@ COMMENT ON COLUMN project_type.created_utc       IS 'When the record was created
 COMMENT ON COLUMN project_type.created_by        IS 'Who created the record';
 COMMENT ON COLUMN project_type.modified_utc      IS 'When the record was modified in UTC';
 COMMENT ON COLUMN project_type.modified_by       IS 'Who modified the record';
+
+/*
+-- ==================================
+-- TRIGGER
+-- ==================================
+*/
+CREATE OR REPLACE trg_project_type_set_modified_utc
+    AFTER UPDATE ON project_type
+    FOR EACH ROW
+    EXECUTE FUNCTION set_modified_utc();

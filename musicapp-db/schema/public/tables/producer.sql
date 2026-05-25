@@ -29,3 +29,13 @@ COMMENT ON COLUMN producer.created_utc   IS 'When the record was created in UTC'
 COMMENT ON COLUMN producer.created_by    IS 'Who created the record';
 COMMENT ON COLUMN producer.modified_utc  IS 'When the record was modified in UTC';
 COMMENT ON COLUMN producer.modified_by   IS 'Who modified the record';
+
+/*
+-- ==================================
+-- TRIGGER
+-- ==================================
+*/
+CREATE OR REPLACE trg_producer_set_modified_utc
+    AFTER UPDATE ON producer
+    FOR EACH ROW
+    EXECUTE FUNCTION set_modified_utc();

@@ -17,3 +17,13 @@ COMMENT ON COLUMN streaming_service.created_utc             IS 'When the record 
 COMMENT ON COLUMN streaming_service.created_by              IS 'Who created the record';
 COMMENT ON COLUMN streaming_service.modified_utc            IS 'When the record was modified in UTC';
 COMMENT ON COLUMN streaming_service.modified_by             IS 'Who modified the record';
+
+/*
+-- ==================================
+-- TRIGGER
+-- ==================================
+*/
+CREATE OR REPLACE trg_streaming_service_set_modified_utc
+    AFTER UPDATE ON streaming_service
+    FOR EACH ROW
+    EXECUTE FUNCTION set_modified_utc();
