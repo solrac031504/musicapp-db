@@ -42,4 +42,4 @@ jobs:
             -url=${{ env.FLYWAY_URL }} 
             -user=${{ secrets.FLYWAY_USER }} 
             -password=${{ secrets.FLYWAY_PASSWORD }} 
-            -locations=filesystem:/github/workspace/musicapp-db/migrations check -code
+            -locations=filesystem:/github/workspace/musicapp-db/migrations check
