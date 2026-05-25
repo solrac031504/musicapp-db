@@ -9,10 +9,10 @@
 -- ======================================================
 */
 
-CREATE OR REPLACE set_modified_utc()
+CREATE OR REPLACE FUNCTION set_modified_utc()
 RETURNS TRIGGER AS $$
 BEGIN
     NEW.modified_utc = NOW() AT TIME ZONE 'UTC';
-    RETURN NEW
+    RETURN NEW;
 END;
 $$ LANGUAGE plpgsql;
