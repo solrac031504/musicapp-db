@@ -1,6 +1,6 @@
 /*
 -- ==================================
--- V7__create_triggers.sql
+-- V8__create_triggers.sql
 -- Creates trigger function and adds triggers on all tables
 -- Tables: artist_group_membership, artist_group, artist, genre_hierarchy, genre, producer_group_membership, producer_group, producer, project_type, project, scene, song, streaming_service, user_login
 -- Function: set_modified_utc

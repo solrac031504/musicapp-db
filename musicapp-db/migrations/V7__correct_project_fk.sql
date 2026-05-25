@@ -1,6 +1,6 @@
 /*
 -- ==================================
--- V6__correct_project_fk.sql
+-- V7__correct_project_fk.sql
 -- Corrects the foreign key reference on fk_project_scene_id
 -- Tables: project
 -- ==================================
