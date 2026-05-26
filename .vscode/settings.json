@@ -4,5 +4,13 @@
         "editor.defaultFormatter": "github.vscode-github-actions",
         "editor.tabSize": 2,
         "editor.insertSpaces": true
-    }
+    },
+    "json.schemas": [
+        {
+            "fileMatch": [
+                "Genres.json"
+            ],
+            "url": "./musicapp-db/etl/data/json/schema/Genres.schema.json"
+        }
+    ]
 }
