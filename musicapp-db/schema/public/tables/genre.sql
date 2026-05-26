@@ -36,6 +36,6 @@ COMMENT ON COLUMN genre.modified_by  IS 'Who modified the record';
 -- ==================================
 */
 CREATE TRIGGER trg_genre_set_modified_utc
-    AFTER UPDATE ON genre
+    BEFORE UPDATE ON genre
     FOR EACH ROW
     EXECUTE FUNCTION set_modified_utc();

@@ -97,6 +97,6 @@ COMMENT ON COLUMN song.modified_by       IS 'Who modified the record';
 -- ==================================
 */
 CREATE TRIGGER trg_song_set_modified_utc
-    AFTER UPDATE ON song
+    BEFORE UPDATE ON song
     FOR EACH ROW
     EXECUTE FUNCTION set_modified_utc();

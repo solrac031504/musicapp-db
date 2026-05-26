@@ -63,6 +63,6 @@ COMMENT ON COLUMN genre_hierarchy.modified_by     IS 'Who modified the record';
 -- ==================================
 */
 CREATE TRIGGER trg_genre_hierarchy_set_modified_utc
-    AFTER UPDATE ON genre_hierarchy
+    BEFORE UPDATE ON genre_hierarchy
     FOR EACH ROW
     EXECUTE FUNCTION set_modified_utc();
