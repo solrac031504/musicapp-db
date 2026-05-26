@@ -34,7 +34,7 @@ class GenreETLPipeline:
         """
         Connect to PostgreSQL database
         Example:
-        postgresql+psycopg2://user:password@localhost:5432/musicdb
+        postgresql+psycopg2://user:password@localhost:5432/dbname
         """
         try:
             self.engine = create_engine(
