@@ -36,6 +36,6 @@ COMMENT ON COLUMN artist_group.modified_by          IS 'Who modified the record'
 -- ==================================
 */
 CREATE TRIGGER trg_artist_group_set_modified_utc
-    AFTER UPDATE ON artist_group
+    BEFORE UPDATE ON artist_group
     FOR EACH ROW
     EXECUTE FUNCTION set_modified_utc();
