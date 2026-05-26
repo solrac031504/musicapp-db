@@ -9,6 +9,24 @@ CREATE TABLE genre
     , modified_by       VARCHAR(255)        NULL
     , CONSTRAINT pk_genre PRIMARY KEY (genre_id)
 );
+
+/*
+-- ==================================
+-- INDEXES
+-- ==================================
+*/
+CREATE UNIQUE INDEX ux_genre_genre_name
+ON genre
+(
+    genre_name
+)
+INCLUDE
+(
+    "description"
+    ,genre_id
+    ,created_by
+    ,modified_by
+);
  
 /*
 -- ==================================
