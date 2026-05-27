@@ -30,7 +30,7 @@ class GenreETLPipeline:
     # -----------------------------------
     # Database Connection
     # -----------------------------------
-    def connect_to_database(self):
+    def connect_to_database(self) -> bool:
         """
         Connect to PostgreSQL database
         Example:
@@ -54,7 +54,7 @@ class GenreETLPipeline:
     # -----------------------------------
     # JSON Extraction
     # -----------------------------------
-    def extract_from_json(self, json_file_path):
+    def extract_from_json(self, json_file_path: str) -> bool:
         """
         Extract Genre + GenreHierarchy
         from array-based Genres JSON
@@ -171,7 +171,7 @@ class GenreETLPipeline:
     # -----------------------------------
     # Stage Table Cleanup
     # -----------------------------------
-    def truncate_stage_tables(self):
+    def truncate_stage_tables(self) -> bool:
         try:
             with self.engine.begin() as conn:
                 conn.execute(
@@ -251,7 +251,7 @@ class GenreETLPipeline:
     # -----------------------------------
     # Merge Stage → Final
     # -----------------------------------
-    def merge_to_final_tables(self):
+    def merge_to_final_tables(self) -> bool:
         """
         Assumes Postgres merge stored procedures exist:
         stage.genre_merge()
@@ -297,7 +297,7 @@ class GenreETLPipeline:
     # -----------------------------------
     # Run ETL
     # -----------------------------------
-    def run_etl(self, json_file_path):
+    def run_etl(self, json_file_path: str) -> bool:
         logger.info(
             "Starting Genre ETL..."
         )
