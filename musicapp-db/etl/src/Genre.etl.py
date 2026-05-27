@@ -10,6 +10,7 @@ from sqlalchemy import create_engine, text
 from sqlalchemy.engine import Engine
 from dotenv import load_dotenv
 
+from utils.EmailService import EmailService
 
 # -----------------------------------
 # Logging
@@ -51,6 +52,8 @@ class GenreETLPipeline:
         self.engine: Optional[Engine] = None
         self.genre_df: Optional[pd.DataFrame] = None
         self.hierarchy_df: Optional[pd.DataFrame] = None
+        self._email_service = EmailService()
+        self._package_name = "GenreETLPipeline"
 
     # -----------------------------------
     # Database Connection
@@ -61,6 +64,7 @@ class GenreETLPipeline:
         Example connection string:
         postgresql+psycopg2://user:password@localhost:5432/dbname
         """
+        self._step = "connect_to_database"
         try:
             self.engine = create_engine(self.db_connection_string)
 
@@ -72,6 +76,11 @@ class GenreETLPipeline:
 
         except Exception as e:
             logger.error(f"Database connection failed: {e}")
+            self._email_service.send_failure_email(
+                package_name=self._package_name,
+                step=self._step,
+                error=str(e)
+            )
             return False
 
     # -----------------------------------
@@ -82,6 +91,7 @@ class GenreETLPipeline:
         Extract Genre + GenreHierarchy
         from array-based Genres JSON.
         """
+        self._step = "extract_from_json"
         try:
             with open(json_file_path, "r", encoding="utf-8") as file:
                 genres: list[GenreObject] = json.load(file)
@@ -141,17 +151,28 @@ class GenreETLPipeline:
         except (OSError, json.JSONDecodeError) as e:
             logger.error(f"JSON extraction failed: {e}")
             logger.error(traceback.format_exc())
+            self._email_service.send_failure_email(
+                package_name=self._package_name,
+                step=self._step,
+                error=str(e)
+            )
             return False
 
         except KeyError as e:
             logger.error(f"Missing required field in genre data: {e}")
             logger.error(traceback.format_exc())
+            self._email_service.send_failure_email(
+                package_name=self._package_name,
+                step=self._step,
+                error=str(e)
+            )
             return False
 
     # -----------------------------------
     # Stage Table Cleanup
     # -----------------------------------
     def truncate_stage_tables(self) -> bool:
+        self._step = "truncate_stage_tables"
         if self.engine is None:
             logger.error("Database engine is not initialized")
             return False
@@ -166,12 +187,18 @@ class GenreETLPipeline:
 
         except Exception as e:
             logger.error(f"Failed truncating stage tables: {e}")
+            self._email_service.send_failure_email(
+                package_name=self._package_name,
+                step=self._step,
+                error=str(e)
+            )
             return False
 
     # -----------------------------------
     # Pandas → Postgres
     # -----------------------------------
     def load_to_stage_tables(self) -> bool:
+        self._step = "load_to_stage_tables"
         if self.engine is None:
             logger.error("Database engine is not initialized")
             return False
@@ -211,6 +238,11 @@ class GenreETLPipeline:
         except Exception as e:
             logger.error(f"Failed loading stage tables: {e}")
             logger.error(traceback.format_exc())
+            self._email_service.send_failure_email(
+                package_name=self._package_name,
+                step=self._step,
+                error=str(e)
+            )
             return False
 
     # -----------------------------------
@@ -222,6 +254,7 @@ class GenreETLPipeline:
         stage.genre_merge()
         stage.genre_hierarchy_merge()
         """
+        self._step = "merge_to_final_tables"
         if self.engine is None:
             logger.error("Database engine is not initialized")
             return False
@@ -240,12 +273,18 @@ class GenreETLPipeline:
         except Exception as e:
             logger.error(f"Merge failed: {e}")
             logger.error(traceback.format_exc())
+            self._email_service.send_failure_email(
+                package_name=self._package_name,
+                step=self._step,
+                error=str(e)
+            )
             return False
 
     # -----------------------------------
     # Run ETL
     # -----------------------------------
     def run_etl(self, json_file_path: str) -> bool:
+        self._step = "run_etl"
         logger.info("Starting Genre ETL...")
 
         steps: list[tuple[str, bool]] = [

@@ -5,6 +5,14 @@
         "editor.tabSize": 2,
         "editor.insertSpaces": true
     },
+    "[python]": {
+        "diffEditor.ignoreTrimWhitespace": false,
+        "editor.formatOnType": true,
+        "editor.wordBasedSuggestions": "off",
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": "explicit"
+        }
+    },
     "json.schemas": [
         {
             "fileMatch": [
@@ -12,5 +20,6 @@
             ],
             "url": "./musicapp-db/etl/data/json/schema/Genres.schema.json"
         }
-    ]
+    ],
+    "python.analysis.typeCheckingMode": "strict"
 }
