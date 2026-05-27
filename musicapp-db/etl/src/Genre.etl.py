@@ -2,10 +2,12 @@ import json
 import os
 import logging
 import traceback
+from typing import TypedDict, Optional
+from dataclasses import dataclass
 
 import pandas as pd
-import sqlalchemy
 from sqlalchemy import create_engine, text
+from sqlalchemy.engine import Engine
 from dotenv import load_dotenv
 
 
@@ -20,26 +22,47 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 
+# -----------------------------------
+# TypedDicts
+# -----------------------------------
+@dataclass
+class GenreObject(TypedDict, total=False):
+    id: int
+    name: str
+    parents: list["GenreObject"]
+
+@dataclass
+class GenreRow(TypedDict):
+    genre_id: int
+    genre_name: str
+
+@dataclass
+class HierarchyRow(TypedDict):
+    genre_id: int
+    parent_genre_id: int
+
+
+# -----------------------------------
+# Pipeline
+# -----------------------------------
 class GenreETLPipeline:
-    def __init__(self, db_connection_string):
-        self.db_connection_string = db_connection_string
-        self.engine = None
-        self.genre_df = None
-        self.hierarchy_df = None
+    def __init__(self, db_connection_string: str) -> None:
+        self.db_connection_string: str = db_connection_string
+        self.engine: Optional[Engine] = None
+        self.genre_df: Optional[pd.DataFrame] = None
+        self.hierarchy_df: Optional[pd.DataFrame] = None
 
     # -----------------------------------
     # Database Connection
     # -----------------------------------
     def connect_to_database(self) -> bool:
         """
-        Connect to PostgreSQL database
-        Example:
+        Connect to PostgreSQL database.
+        Example connection string:
         postgresql+psycopg2://user:password@localhost:5432/dbname
         """
         try:
-            self.engine = create_engine(
-                self.db_connection_string
-            )
+            self.engine = create_engine(self.db_connection_string)
 
             with self.engine.connect() as conn:
                 conn.execute(text("SELECT 1"))
@@ -57,114 +80,71 @@ class GenreETLPipeline:
     def extract_from_json(self, json_file_path: str) -> bool:
         """
         Extract Genre + GenreHierarchy
-        from array-based Genres JSON
+        from array-based Genres JSON.
         """
-
         try:
-            with open(
-                json_file_path,
-                "r",
-                encoding="utf-8"
-            ) as file:
-                genres = json.load(file)
+            with open(json_file_path, "r", encoding="utf-8") as file:
+                genres: list[GenreObject] = json.load(file)
 
-            genre_rows = {}
-            relationship_rows = set()
+            genre_rows: dict[str, GenreRow] = {}
+            relationship_rows: set[tuple[int, int]] = set()
 
-            def register_genre(genre_obj):
-                """
-                Add unique genre by GenreName
-                """
-                genre_name = genre_obj["name"]
-                genre_id = genre_obj.get("id")
+            def register_genre(genre_obj: GenreObject) -> tuple[int, str]:
+                """Add unique genre by GenreName."""
+                genre_name: str = genre_obj.get("name") or "Unknown"
+                genre_id: int = genre_obj.get("id") or -1
 
                 if genre_name not in genre_rows:
-                    genre_rows[genre_name] = {
-                        "GenreId": genre_id,
-                        "GenreName": genre_name
-                    }
+                    genre_rows[genre_name] = GenreRow(
+                        genre_id=genre_id,
+                        genre_name=genre_name,
+                    )
 
                 return genre_id, genre_name
 
-            def traverse_parents(child_obj):
-                """
-                Recursively walk parent chain
-                and add hierarchy relationships
-                """
-
-                child_id, child_name = register_genre(
-                    child_obj
-                )
-
-                parents = child_obj.get("parents")
+            def traverse_parents(child_obj: GenreObject) -> None:
+                """Recursively walk parent chain and add hierarchy relationships."""
+                child_id, _ = register_genre(child_obj)
+                parents: Optional[list[GenreObject]] = child_obj.get("parents")
 
                 if parents is None:
-                    relationship_rows.add(
-                        (child_id, -1)
-                    )
+                    relationship_rows.add((child_id, -1))
                     return
 
                 for parent_obj in parents:
-                    parent_id, parent_name = register_genre(
-                        parent_obj
-                    )
-
-                    relationship_rows.add(
-                        (child_id, parent_id)
-                    )
-
+                    parent_id, _ = register_genre(parent_obj)
+                    relationship_rows.add((child_id, parent_id))
                     traverse_parents(parent_obj)
 
             for genre in genres:
-                genre_id, genre_name = register_genre(
-                    genre
-                )
-
-                parents = genre.get("parents")
+                genre_id, _ = register_genre(genre)
+                parents: Optional[list[GenreObject]] = genre.get("parents")
 
                 if parents is None:
-                    relationship_rows.add(
-                        (genre_id, -1)
-                    )
-
+                    relationship_rows.add((genre_id, -1))
                 else:
                     for parent_obj in parents:
-                        parent_id, parent_name = register_genre(
-                            parent_obj
-                        )
-
-                        relationship_rows.add(
-                            (genre_id, parent_id)
-                        )
-
+                        parent_id, _ = register_genre(parent_obj)
+                        relationship_rows.add((genre_id, parent_id))
                         traverse_parents(parent_obj)
 
-            self.genre_df = pd.DataFrame(
-                list(genre_rows.values())
-            )
-
+            self.genre_df = pd.DataFrame(list(genre_rows.values()))
             self.hierarchy_df = pd.DataFrame(
                 list(relationship_rows),
-                columns=[
-                    "GenreId",
-                    "ParentGenreId"
-                ]
+                columns=["genre_id", "parent_genre_id"],
             )
 
-            logger.info(
-                f"Extracted {len(self.genre_df)} genres"
-            )
-
-            logger.info(
-                f"Extracted {len(self.hierarchy_df)} hierarchy rows"
-            )
-
+            logger.info(f"Extracted {len(self.genre_df)} genres")
+            logger.info(f"Extracted {len(self.hierarchy_df)} hierarchy rows")
             return True
 
-        except Exception as e:
-            logger.error(
-                f"JSON extraction failed: {e}"
-            )
+        except (OSError, json.JSONDecodeError) as e:
+            logger.error(f"JSON extraction failed: {e}")
+            logger.error(traceback.format_exc())
+            return False
+
+        except KeyError as e:
+            logger.error(f"Missing required field in genre data: {e}")
             logger.error(traceback.format_exc())
             return False
 
@@ -172,79 +152,64 @@ class GenreETLPipeline:
     # Stage Table Cleanup
     # -----------------------------------
     def truncate_stage_tables(self) -> bool:
+        if self.engine is None:
+            logger.error("Database engine is not initialized")
+            return False
+
         try:
             with self.engine.begin() as conn:
-                conn.execute(
-                    text(
-                        'TRUNCATE TABLE stage."Genre"'
-                    )
-                )
+                conn.execute(text('TRUNCATE TABLE stage."genre"'))
+                conn.execute(text('TRUNCATE TABLE stage."genre_hierarchy"'))
 
-                conn.execute(
-                    text(
-                        'TRUNCATE TABLE stage."GenreHierarchy"'
-                    )
-                )
-
-            logger.info(
-                "Truncated stage tables successfully"
-            )
-
+            logger.info("Truncated stage tables successfully")
             return True
 
         except Exception as e:
-            logger.error(
-                f"Failed truncating stage tables: {e}"
-            )
+            logger.error(f"Failed truncating stage tables: {e}")
             return False
 
     # -----------------------------------
     # Pandas → Postgres
     # -----------------------------------
-    def load_to_stage_tables(self):
+    def load_to_stage_tables(self) -> bool:
+        if self.engine is None:
+            logger.error("Database engine is not initialized")
+            return False
+
+        if self.genre_df is None:
+            logger.error("genre_df not loaded")
+            return False
+
+        if self.hierarchy_df is None:
+            logger.error("hierarchy_df not loaded")
+            return False
+
         try:
-            if self.genre_df is None:
-                raise Exception(
-                    "genre_df not loaded"
-                )
-
-            if self.hierarchy_df is None:
-                raise Exception(
-                    "hierarchy_df not loaded"
-                )
-
             self.genre_df.to_sql(
-                name="Genre",
+                name="genre",
                 schema="stage",
                 con=self.engine,
                 if_exists="append",
                 index=False,
-                method="multi"
+                method="multi",
             )
 
-            logger.info(
-                f"Loaded {len(self.genre_df)} rows into stage.Genre"
-            )
+            logger.info(f"Loaded {len(self.genre_df)} rows into stage.genre")
 
             self.hierarchy_df.to_sql(
-                name="GenreHierarchy",
+                name="genre_hierarchy",
                 schema="stage",
                 con=self.engine,
                 if_exists="append",
                 index=False,
-                method="multi"
+                method="multi",
             )
 
-            logger.info(
-                f"Loaded {len(self.hierarchy_df)} rows into stage.GenreHierarchy"
-            )
-
+            logger.info(f"Loaded {len(self.hierarchy_df)} rows into stage.genre_hierarchy")
             return True
 
         except Exception as e:
-            logger.error(
-                f"Failed loading stage tables: {e}"
-            )
+            logger.error(f"Failed loading stage tables: {e}")
             logger.error(traceback.format_exc())
             return False
 
@@ -257,40 +222,23 @@ class GenreETLPipeline:
         stage.genre_merge()
         stage.genre_hierarchy_merge()
         """
+        if self.engine is None:
+            logger.error("Database engine is not initialized")
+            return False
 
         try:
             with self.engine.begin() as conn:
+                logger.info("Merging stage.Genre...")
+                conn.execute(text("CALL stage.genre_merge();"))
 
-                logger.info(
-                    "Merging stage.Genre..."
-                )
+                logger.info("Merging stage.GenreHierarchy...")
+                conn.execute(text("CALL stage.genre_hierarchy_merge();"))
 
-                conn.execute(
-                    text(
-                        "CALL stage.genre_merge();"
-                    )
-                )
-
-                logger.info(
-                    "Merging stage.GenreHierarchy..."
-                )
-
-                conn.execute(
-                    text(
-                        "CALL stage.genre_hierarchy_merge();"
-                    )
-                )
-
-            logger.info(
-                "Merge completed successfully"
-            )
-
+            logger.info("Merge completed successfully")
             return True
 
         except Exception as e:
-            logger.error(
-                f"Merge failed: {e}"
-            )
+            logger.error(f"Merge failed: {e}")
             logger.error(traceback.format_exc())
             return False
 
@@ -298,31 +246,22 @@ class GenreETLPipeline:
     # Run ETL
     # -----------------------------------
     def run_etl(self, json_file_path: str) -> bool:
-        logger.info(
-            "Starting Genre ETL..."
-        )
+        logger.info("Starting Genre ETL...")
 
-        if not self.connect_to_database():
-            return False
+        steps: list[tuple[str, bool]] = [
+            ("connect_to_database",   self.connect_to_database()),
+            ("extract_from_json",     self.extract_from_json(json_file_path)),
+            ("truncate_stage_tables", self.truncate_stage_tables()),
+            ("load_to_stage_tables",  self.load_to_stage_tables()),
+            ("merge_to_final_tables", self.merge_to_final_tables()),
+        ]
 
-        if not self.extract_from_json(
-            json_file_path
-        ):
-            return False
+        for step_name, result in steps:
+            if not result:
+                logger.error(f"ETL aborted at step: {step_name}")
+                return False
 
-        if not self.truncate_stage_tables():
-            return False
-
-        if not self.load_to_stage_tables():
-            return False
-
-        if not self.merge_to_final_tables():
-            return False
-
-        logger.info(
-            "Genre ETL completed successfully"
-        )
-
+        logger.info("Genre ETL completed successfully")
         return True
 
 
@@ -332,22 +271,22 @@ class GenreETLPipeline:
 if __name__ == "__main__":
     load_dotenv()
 
-    DATABASE_CONNECTION_STRING = os.getenv(
-        "DATABASE_CONNECTION_STRING"
-    )
+    db_connection_string: Optional[str] = os.getenv("DATABASE_CONNECTION_STRING")
 
-    JSON_PATH = os.path.join(
+    if not db_connection_string:
+        raise EnvironmentError(
+            "DATABASE_CONNECTION_STRING is not set in environment"
+        )
+
+    json_path: str = os.path.join(
         os.getcwd(),
         "MusicDB_ETL",
         "Data",
-        "Genres.with-parents-array.json"
+        "Genres.with-parents-array.json",
     )
 
-    etl = GenreETLPipeline(
-        db_connection_string=DATABASE_CONNECTION_STRING
-    )
-
-    success = etl.run_etl(JSON_PATH)
+    etl = GenreETLPipeline(db_connection_string=db_connection_string)
+    success: bool = etl.run_etl(json_path)
 
     if success:
         print("ETL completed successfully")
