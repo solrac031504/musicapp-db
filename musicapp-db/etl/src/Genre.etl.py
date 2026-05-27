@@ -319,9 +319,9 @@ if __name__ == "__main__":
 
     json_path: str = os.path.join(
         os.getcwd(),
-        "MusicDB_ETL",
-        "Data",
-        "Genres.with-parents-array.json",
+        "etl",
+        "data",
+        "Genres.json",
     )
 
     etl = GenreETLPipeline(db_connection_string=db_connection_string)
