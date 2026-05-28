@@ -46,7 +46,7 @@ jobs:
 
   python-validation:
     name: musicapp-etl-validation
-    runs-on: self-hostedj
+    runs-on: ubuntu-latest
     defaults:
       run:
         working-directory: musicapp-db
