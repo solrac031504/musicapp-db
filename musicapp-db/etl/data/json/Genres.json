@@ -1,0 +1,6469 @@
+[
+    {
+        "id": 1,
+        "name": "2-step",
+        "parents": [
+            {
+                "id": 375,
+                "name": "UK Garage",
+                "parents": [
+                    {
+                        "id": 131,
+                        "name": "Electronic Dance Music",
+                        "parents": [
+                            {
+                                "id": 130,
+                                "name": "Electronic",
+                                "parents": null
+                            },
+                            {
+                                "id": 92,
+                                "name": "Dance",
+                                "parents": null
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Abstract Hip-Hop",
+        "parents": [
+            {
+                "id": 192,
+                "name": "Hip Hop",
+                "parents": null
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "name": "Acid House",
+        "parents": [
+            {
+                "id": 198,
+                "name": "House",
+                "parents": [
+                    {
+                        "id": 131,
+                        "name": "Electronic Dance Music",
+                        "parents": [
+                            {
+                                "id": 130,
+                                "name": "Electronic",
+                                "parents": null
+                            },
+                            {
+                                "id": 92,
+                                "name": "Dance",
+                                "parents": null
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "name": "Acid Rock",
+        "parents": [
+            {
+                "id": 301,
+                "name": "Psychedelic Rock",
+                "parents": [
+                    {
+                        "id": 318,
+                        "name": "Rock",
+                        "parents": null
+                    },
+                    {
+                        "id": 300,
+                        "name": "Psychedelia",
+                        "parents": null
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "name": "Acid Techno",
+        "parents": [
+            {
+                "id": 363,
+                "name": "Techno",
+                "parents": [
+                    {
+                        "id": 131,
+                        "name": "Electronic Dance Music",
+                        "parents": [
+                            {
+                                "id": 130,
+                                "name": "Electronic",
+                                "parents": null
+                            },
+                            {
+                                "id": 92,
+                                "name": "Dance",
+                                "parents": null
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "name": "Acoustic Blues",
+        "parents": [
+            {
+                "id": 41,
+                "name": "Blues",
+                "parents": null
+            }
+        ]
+    },
+    {
+        "id": 8,
+        "name": "Acoustic Rock",
+        "parents": [
+            {
+                "id": 318,
+                "name": "Rock",
+                "parents": null
+            }
+        ]
+    },
+    {
+        "id": 9,
+        "name": "Acoustic Texas Blues",
+        "parents": [
+            {
+                "id": 7,
+                "name": "Acoustic Blues",
+                "parents": [
+                    {
+                        "id": 41,
+                        "name": "Blues",
+                        "parents": null
+                    }
+                ]
+            },
+            {
+                "id": 82,
+                "name": "Country Blues",
+                "parents": [
+                    {
+                        "id": 25,
+                        "name": "American Folk Music",
+                        "parents": [
+                            {
+                                "id": 268,
+                                "name": "Northern American Music",
+                                "parents": [
+                                    {
+                                        "id": 315,
+                                        "name": "Regional Music",
+                                        "parents": null
+                                    }
+                                ]
+                            },
+                            {
+                                "id": 366,
+                                "name": "Traditional Folk Music",
+                                "parents": [
+                                    {
+                                        "id": 315,
+                                        "name": "Regional Music",
+                                        "parents": null
+                                    },
+                                    {
+                                        "id": 149,
+                                        "name": "Folk",
+                                        "parents": null
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": 41,
+                        "name": "Blues",
+                        "parents": null
+                    }
+                ]
+            },
+            {
+                "id": 365,
+                "name": "Texan Music",
+                "parents": [
+                    {
+                        "id": 268,
+                        "name": "Northern American Music",
+                        "parents": [
+                            {
+                                "id": 315,
+                                "name": "Regional Music",
+                                "parents": null
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 10,
+        "name": "Adult Contemporary",
+        "parents": [
+            {
+                "id": 279,
+                "name": "Pop",
+                "parents": null
+            }
+        ]
+    },
+    {
+        "id": 12,
+        "name": "Afrobeats",
+        "parents": [
+            {
+                "id": 279,
+                "name": "Pop",
+                "parents": null
+            }
+        ]
+    },
+    {
+        "id": 13,
+        "name": "Afropiano",
+        "parents": [
+            {
+                "id": 12,
+                "name": "Afrobeats",
+                "parents": [
+                    {
+                        "id": 279,
+                        "name": "Pop",
+                        "parents": null
+                    }
+                ]
+            },
+            {
+                "id": 21,
+                "name": "Amapiano",
+                "parents": [
+                    {
+                        "id": 198,
+                        "name": "House",
+                        "parents": [
+                            {
+                                "id": 131,
+                                "name": "Electronic Dance Music",
+                                "parents": [
+                                    {
+                                        "id": 92,
+                                        "name": "Dance",
+                                        "parents": null
+                                    },
+                                    {
+                                        "id": 130,
+                                        "name": "Electronic",
+                                        "parents": null
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": 345,
+                        "name": "Southern African Music",
+                        "parents": [
+                            {
+                                "id": 11,
+                                "name": "African Music",
+                                "parents": [
+                                    {
+                                        "id": 315,
+                                        "name": "Regional Music",
+                                        "parents": null
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 14,
+        "name": "Afroswing",
+        "parents": [
+            {
+                "id": 192,
+                "name": "Hip Hop",
+                "parents": null
+            }
+        ]
+    },
+    {
+        "id": 15,
+        "name": "Alt-Country",
+        "parents": [
+            {
+                "id": 81,
+                "name": "Country",
+                "parents": null
+            }
+        ]
+    },
+    {
+        "id": 16,
+        "name": "Alt-Pop",
+        "parents": [
+            {
+                "id": 279,
+                "name": "Pop",
+                "parents": null
+            }
+        ]
+    },
+    {
+        "id": 17,
+        "name": "Alternative Dance",
+        "parents": [
+            {
+                "id": 20,
+                "name": "Alternative Rock",
+                "parents": [
+                    {
+                        "id": 318,
+                        "name": "Rock",
+                        "parents": null
+                    }
+                ]
+            },
+            {
+                "id": 92,
+                "name": "Dance",
+                "parents": null
+            }
+        ]
+    },
+    {
+        "id": 18,
+        "name": "Alternative Metal",
+        "parents": [
+            {
+                "id": 241,
+                "name": "Metal",
+                "parents": null
+            }
+        ]
+    },
+    {
+        "id": 19,
+        "name": "Alternative R&B",
+        "parents": [
+            {
+                "id": 79,
+                "name": "Contemporary R&B",
+                "parents": [
+                    {
+                        "id": 304,
+                        "name": "R&B",
+                        "parents": null
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 20,
+        "name": "Alternative Rock",
+        "parents": [
+            {
+                "id": 318,
+                "name": "Rock",
+                "parents": null
+            }
+        ]
+    },
+    {
+        "id": 21,
+        "name": "Amapiano",
+        "parents": [
+            {
+                "id": 198,
+                "name": "House",
+                "parents": [
+                    {
+                        "id": 131,
+                        "name": "Electronic Dance Music",
+                        "parents": [
+                            {
+                                "id": 92,
+                                "name": "Dance",
+                                "parents": null
+                            },
+                            {
+                                "id": 130,
+                                "name": "Electronic",
+                                "parents": null
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": 345,
+                "name": "Southern African Music",
+                "parents": [
+                    {
+                        "id": 11,
+                        "name": "African Music",
+                        "parents": [
+                            {
+                                "id": 315,
+                                "name": "Regional Music",
+                                "parents": null
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 22,
+        "name": "Ambient",
+        "parents": null
+    },
+    {
+        "id": 23,
+        "name": "Ambient Pop",
+        "parents": [
+            {
+                "id": 22,
+                "name": "Ambient",
+                "parents": null
+            },
+            {
+                "id": 318,
+                "name": "Rock",
+                "parents": null
+            }
+        ]
+    },
+    {
+        "id": 24,
+        "name": "Ambient Techno",
+        "parents": [
+            {
+                "id": 363,
+                "name": "Techno",
+                "parents": [
+                    {
+                        "id": 131,
+                        "name": "Electronic Dance Music",
+                        "parents": [
+                            {
+                                "id": 92,
+                                "name": "Dance",
+                                "parents": null
+                            },
+                            {
+                                "id": 130,
+                                "name": "Electronic",
+                                "parents": null
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 26,
+        "name": "Americana",
+        "parents": [
+            {
+                "id": 268,
+                "name": "Northern American Music",
+                "parents": [
+                    {
+                        "id": 315,
+                        "name": "Regional Music",
+                        "parents": null
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "name": "AOR",
+        "parents": [
+            {
+                "id": 318,
+                "name": "Rock",
+                "parents": null
+            }
+        ]
+    },
+    {
+        "id": 27,
+        "name": "Art Pop",
+        "parents": [
+            {
+                "id": 279,
+                "name": "Pop",
+                "parents": null
+            }
+        ]
+    },
+    {
+        "id": 28,
+        "name": "Art Rock",
+        "parents": [
+            {
+                "id": 318,
+                "name": "Rock",
+                "parents": null
+            }
+        ]
+    },
+    {
+        "id": 29,
+        "name": "Atlanta Bass",
+        "parents": [
+            {
+                "id": 244,
+                "name": "Miami Bass",
+                "parents": [
+                    {
+                        "id": 92,
+                        "name": "Dance",
+                        "parents": null
+                    },
+                    {
+                        "id": 192,
+                        "name": "Hip Hop",
+                        "parents": null
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 30,
+        "name": "Atmospheric Drum and Bass",
+        "parents": [
+            {
+                "id": 118,
+                "name": "Drum and Bass",
+                "parents": [
+                    {
+                        "id": 131,
+                        "name": "Electronic Dance Music",
+                        "parents": [
+                            {
+                                "id": 92,
+                                "name": "Dance",
+                                "parents": null
+                            },
+                            {
+                                "id": 130,
+                                "name": "Electronic",
+                                "parents": null
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 32,
+        "name": "Baggy",
+        "parents": [
+            {
+                "id": 20,
+                "name": "Alternative Rock",
+                "parents": [
+                    {
+                        "id": 318,
+                        "name": "Rock",
+                        "parents": null
+                    }
+                ]
+            },
+            {
+                "id": 251,
+                "name": "Neo-Psychedelia",
+                "parents": [
+                    {
+                        "id": 300,
+                        "name": "Psychedelia",
+                        "parents": null
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 33,
+        "name": "Barber Beats",
+        "parents": [
+            {
+                "id": 66,
+                "name": "Chillout",
+                "parents": [
+                    {
+                        "id": 130,
+                        "name": "Electronic",
+                        "parents": null
+                    }
+                ]
+            },
+            {
+                "id": 378,
+                "name": "Vapor",
+                "parents": [
+                    {
+                        "id": 130,
+                        "name": "Electronic",
+                        "parents": null
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 34,
+        "name": "Baroque Pop",
+        "parents": [
+            {
+                "id": 279,
+                "name": "Pop",
+                "parents": null
+            }
+        ]
+    },
+    {
+        "id": 35,
+        "name": "Bass House",
+        "parents": [
+            {
+                "id": 198,
+                "name": "House",
+                "parents": [
+                    {
+                        "id": 131,
+                        "name": "Electronic Dance Music",
+                        "parents": [
+                            {
+                                "id": 92,
+                                "name": "Dance",
+                                "parents": null
+                            },
+                            {
+                                "id": 130,
+                                "name": "Electronic",
+                                "parents": null
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 36,
+        "name": "Bassline",
+        "parents": [
+            {
+                "id": 198,
+                "name": "House",
+                "parents": [
+                    {
+                        "id": 131,
+                        "name": "Electronic Dance Music",
+                        "parents": [
+                            {
+                                "id": 92,
+                                "name": "Dance",
+                                "parents": null
+                            },
+                            {
+                                "id": 130,
+                                "name": "Electronic",
+                                "parents": null
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": 375,
+                "name": "UK Garage",
+                "parents": [
+                    {
+                        "id": 131,
+                        "name": "Electronic Dance Music",
+                        "parents": [
+                            {
+                                "id": 92,
+                                "name": "Dance",
+                                "parents": null
+                            },
+                            {
+                                "id": 130,
+                                "name": "Electronic",
+                                "parents": null
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 37,
+        "name": "Bedroom Pop",
+        "parents": [
+            {
+                "id": 205,
+                "name": "Indie Pop",
+                "parents": [
+                    {
+                        "id": 279,
+                        "name": "Pop",
+                        "parents": null
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 38,
+        "name": "Big Beat",
+        "parents": [
+            {
+                "id": 49,
+                "name": "Breakbeat",
+                "parents": [
+                    {
+                        "id": 131,
+                        "name": "Electronic Dance Music",
+                        "parents": [
+                            {
+                                "id": 92,
+                                "name": "Dance",
+                                "parents": null
+                            },
+                            {
+                                "id": 130,
+                                "name": "Electronic",
+                                "parents": null
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 39,
+        "name": "Big Music",
+        "parents": [
+            {
+                "id": 283,
+                "name": "Pop Rock",
+                "parents": [
+                    {
+                        "id": 279,
+                        "name": "Pop",
+                        "parents": null
+                    },
+                    {
+                        "id": 318,
+                        "name": "Rock",
+                        "parents": null
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 40,
+        "name": "Bitpop",
+        "parents": [
+            {
+                "id": 130,
+                "name": "Electronic",
+                "parents": null
+            },
+            {
+                "id": 279,
+                "name": "Pop",
+                "parents": null
+            }
+        ]
+    },
+    {
+        "id": 42,
+        "name": "Blues Rock",
+        "parents": [
+            {
+                "id": 318,
+                "name": "Rock",
+                "parents": null
+            }
+        ]
+    },
+    {
+        "id": 43,
+        "name": "Bolero",
+        "parents": [
+            {
+                "id": 195,
+                "name": "Hispanic American Music",
+                "parents": [
+                    {
+                        "id": 196,
+                        "name": "Hispanic Music",
+                        "parents": [
+                            {
+                                "id": 315,
+                                "name": "Regional Music",
+                                "parents": null
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 44,
+        "name": "Bomba",
+        "parents": [
+            {
+                "id": 58,
+                "name": "Caribbean Folk Music",
+                "parents": [
+                    {
+                        "id": 59,
+                        "name": "Caribbean Music",
+                        "parents": [
+                            {
+                                "id": 315,
+                                "name": "Regional Music",
+                                "parents": null
+                            }
+                        ]
+                    },
+                    {
+                        "id": 366,
+                        "name": "Traditional Folk Music",
+                        "parents": [
+                            {
+                                "id": 149,
+                                "name": "Folk",
+                                "parents": null
+                            },
+                            {
+                                "id": 315,
+                                "name": "Regional Music",
+                                "parents": null
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": 194,
+                "name": "Hispanic American Folk Music",
+                "parents": [
+                    {
+                        "id": 195,
+                        "name": "Hispanic American Music",
+                        "parents": [
+                            {
+                                "id": 196,
+                                "name": "Hispanic Music",
+                                "parents": [
+                                    {
+                                        "id": 315,
+                                        "name": "Regional Music",
+                                        "parents": null
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": 366,
+                        "name": "Traditional Folk Music",
+                        "parents": [
+                            {
+                                "id": 149,
+                                "name": "Folk",
+                                "parents": null
+                            },
+                            {
+                                "id": 315,
+                                "name": "Regional Music",
+                                "parents": null
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 45,
+        "name": "Boogie",
+        "parents": [
+            {
+                "id": 92,
+                "name": "Dance",
+                "parents": null
+            },
+            {
+                "id": 304,
+                "name": "R&B",
+                "parents": null
+            }
+        ]
+    },
+    {
+        "id": 46,
+        "name": "Boom Bap",
+        "parents": [
+            {
+                "id": 192,
+                "name": "Hip Hop",
+                "parents": null
+            }
+        ]
+    },
+    {
+        "id": 47,
+        "name": "Bossa nova",
+        "parents": [
+            {
+                "id": 326,
+                "name": "Samba",
+                "parents": [
+                    {
+                        "id": 48,
+                        "name": "Brazilian Music",
+                        "parents": [
+                            {
+                                "id": 344,
+                                "name": "South American Music",
+                                "parents": [
+                                    {
+                                        "id": 315,
+                                        "name": "Regional Music",
+                                        "parents": null
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 49,
+        "name": "Breakbeat",
+        "parents": [
+            {
+                "id": 131,
+                "name": "Electronic Dance Music",
+                "parents": [
+                    {
+                        "id": 92,
+                        "name": "Dance",
+                        "parents": null
+                    },
+                    {
+                        "id": 130,
+                        "name": "Electronic",
+                        "parents": null
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 51,
+        "name": "Brill Building",
+        "parents": [
+            {
+                "id": 279,
+                "name": "Pop",
+                "parents": null
+            }
+        ]
+    },
+    {
+        "id": 53,
+        "name": "British Rhythm & Blues",
+        "parents": [
+            {
+                "id": 316,
+                "name": "Rhythm & Blues",
+                "parents": [
+                    {
+                        "id": 304,
+                        "name": "R&B",
+                        "parents": null
+                    }
+                ]
+            },
+            {
+                "id": 318,
+                "name": "Rock",
+                "parents": null
+            }
+        ]
+    },
+    {
+        "id": 54,
+        "name": "Britpop",
+        "parents": [
+            {
+                "id": 20,
+                "name": "Alternative Rock",
+                "parents": [
+                    {
+                        "id": 318,
+                        "name": "Rock",
+                        "parents": null
+                    }
+                ]
+            },
+            {
+                "id": 283,
+                "name": "Pop Rock",
+                "parents": [
+                    {
+                        "id": 279,
+                        "name": "Pop",
+                        "parents": null
+                    },
+                    {
+                        "id": 318,
+                        "name": "Rock",
+                        "parents": null
+                    }
+                ]
+            },
+            {
+                "id": 329,
+                "name": "Scenes & Movements",
+                "parents": null
+            }
+        ]
+    },
+    {
+        "id": 55,
+        "name": "Bubblegum Bass",
+        "parents": [
+            {
+                "id": 131,
+                "name": "Electronic Dance Music",
+                "parents": [
+                    {
+                        "id": 92,
+                        "name": "Dance",
+                        "parents": null
+                    },
+                    {
+                        "id": 130,
+                        "name": "Electronic",
+                        "parents": null
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 57,
+        "name": "Canción Melodica",
+        "parents": [
+            {
+                "id": 196,
+                "name": "Hispanic Music",
+                "parents": [
+                    {
+                        "id": 315,
+                        "name": "Regional Music",
+                        "parents": null
+                    }
+                ]
+            },
+            {
+                "id": 279,
+                "name": "Pop",
+                "parents": null
+            }
+        ]
+    },
+    {
+        "id": 60,
+        "name": "Chamber Folk",
+        "parents": [
+            {
+                "id": 78,
+                "name": "Contemporary Folk",
+                "parents": [
+                    {
+                        "id": 149,
+                        "name": "Folk",
+                        "parents": null
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 61,
+        "name": "Chamber Music",
+        "parents": [
+            {
+                "id": 383,
+                "name": "Western Classical Music",
+                "parents": [
+                    {
+                        "id": 73,
+                        "name": "Classical Music",
+                        "parents": null
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 62,
+        "name": "Chamber Pop",
+        "parents": [
+            {
+                "id": 205,
+                "name": "Indie Pop",
+                "parents": [
+                    {
+                        "id": 279,
+                        "name": "Pop",
+                        "parents": null
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 63,
+        "name": "Chicago Blues",
+        "parents": [
+            {
+                "id": 123,
+                "name": "Electric Blues",
+                "parents": [
+                    {
+                        "id": 41,
+                        "name": "Blues",
+                        "parents": null
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 64,
+        "name": "Chicago Drill",
+        "parents": [
+            {
+                "id": 115,
+                "name": "Drill",
+                "parents": [
+                    {
+                        "id": 368,
+                        "name": "Trap",
+                        "parents": [
+                            {
+                                "id": 192,
+                                "name": "Hip Hop",
+                                "parents": null
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 65,
+        "name": "Chicago Soul",
+        "parents": [
+            {
+                "id": 341,
+                "name": "Soul",
+                "parents": null
+            }
+        ]
+    },
+    {
+        "id": 67,
+        "name": "Chillsynth",
+        "parents": [
+            {
+                "id": 68,
+                "name": "Chillwave",
+                "parents": [
+                    {
+                        "id": 207,
+                        "name": "Indietronica",
+                        "parents": [
+                            {
+                                "id": 130,
+                                "name": "Electronic",
+                                "parents": null
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": 359,
+                "name": "Synthwave",
+                "parents": [
+                    {
+                        "id": 130,
+                        "name": "Electronic",
+                        "parents": null
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 68,
+        "name": "Chillwave",
+        "parents": [
+            {
+                "id": 207,
+                "name": "Indietronica",
+                "parents": [
+                    {
+                        "id": 130,
+                        "name": "Electronic",
+                        "parents": null
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 69,
+        "name": "Chipmunk Soul",
+        "parents": [
+            {
+                "id": 192,
+                "name": "Hip Hop",
+                "parents": null
+            }
+        ]
+    },
+    {
+        "id": 72,
+        "name": "Cinematic Classical",
+        "parents": [
+            {
+                "id": 383,
+                "name": "Western Classical Music",
+                "parents": [
+                    {
+                        "id": 73,
+                        "name": "Classical Music",
+                        "parents": null
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 74,
+        "name": "Cloud Rap",
+        "parents": [
+            {
+                "id": 192,
+                "name": "Hip Hop",
+                "parents": null
+            }
+        ]
+    },
+    {
+        "id": 76,
+        "name": "Comedy Rock",
+        "parents": [
+            {
+                "id": 248,
+                "name": "Musical Comedy",
+                "parents": [
+                    {
+                        "id": 75,
+                        "name": "Comedy",
+                        "parents": null
+                    }
+                ]
+            },
+            {
+                "id": 318,
+                "name": "Rock",
+                "parents": null
+            }
+        ]
+    },
+    {
+        "id": 77,
+        "name": "Conscious Hip Hop",
+        "parents": [
+            {
+                "id": 192,
+                "name": "Hip Hop",
+                "parents": null
+            }
+        ]
+    },
+    {
+        "id": 78,
+        "name": "Contemporary Folk",
+        "parents": [
+            {
+                "id": 149,
+                "name": "Folk",
+                "parents": null
+            }
+        ]
+    },
+    {
+        "id": 79,
+        "name": "Contemporary R&B",
+        "parents": [
+            {
+                "id": 304,
+                "name": "R&B",
+                "parents": null
+            }
+        ]
+    },
+    {
+        "id": 80,
+        "name": "Corrido tumbado",
+        "parents": [
+            {
+                "id": 333,
+                "name": "Sierreño",
+                "parents": [
+                    {
+                        "id": 266,
+                        "name": "Norteño",
+                        "parents": [
+                            {
+                                "id": 243,
+                                "name": "Mexican Music",
+                                "parents": [
+                                    {
+                                        "id": 195,
+                                        "name": "Hispanic American Music",
+                                        "parents": [
+                                            {
+                                                "id": 196,
+                                                "name": "Hispanic Music",
+                                                "parents": [
+                                                    {
+                                                        "id": 315,
+                                                        "name": "Regional Music",
+                                                        "parents": null
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 83,
+        "name": "Country Pop",
+        "parents": [
+            {
+                "id": 81,
+                "name": "Country",
+                "parents": null
+            },
+            {
+                "id": 279,
+                "name": "Pop",
+                "parents": null
+            }
+        ]
+    },
+    {
+        "id": 84,
+        "name": "Country Rock",
+        "parents": [
+            {
+                "id": 268,
+                "name": "Northern American Music",
+                "parents": [
+                    {
+                        "id": 315,
+                        "name": "Regional Music",
+                        "parents": null
+                    }
+                ]
+            },
+            {
+                "id": 318,
+                "name": "Rock",
+                "parents": null
+            }
+        ]
+    },
+    {
+        "id": 85,
+        "name": "Country Soul",
+        "parents": [
+            {
+                "id": 341,
+                "name": "Soul",
+                "parents": null
+            }
+        ]
+    },
+    {
+        "id": 87,
+        "name": "Cueca",
+        "parents": [
+            {
+                "id": 194,
+                "name": "Hispanic American Folk Music",
+                "parents": [
+                    {
+                        "id": 195,
+                        "name": "Hispanic American Music",
+                        "parents": [
+                            {
+                                "id": 196,
+                                "name": "Hispanic Music",
+                                "parents": [
+                                    {
+                                        "id": 315,
+                                        "name": "Regional Music",
+                                        "parents": null
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": 366,
+                        "name": "Traditional Folk Music",
+                        "parents": [
+                            {
+                                "id": 149,
+                                "name": "Folk",
+                                "parents": null
+                            },
+                            {
+                                "id": 315,
+                                "name": "Regional Music",
+                                "parents": null
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": 344,
+                "name": "South American Music",
+                "parents": [
+                    {
+                        "id": 315,
+                        "name": "Regional Music",
+                        "parents": null
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 88,
+        "name": "Cumbia",
+        "parents": [
+            {
+                "id": 195,
+                "name": "Hispanic American Music",
+                "parents": [
+                    {
+                        "id": 196,
+                        "name": "Hispanic Music",
+                        "parents": [
+                            {
+                                "id": 315,
+                                "name": "Regional Music",
+                                "parents": null
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 89,
+        "name": "Cumbia colombiana",
+        "parents": [
+            {
+                "id": 59,
+                "name": "Caribbean Music",
+                "parents": [
+                    {
+                        "id": 315,
+                        "name": "Regional Music",
+                        "parents": null
+                    }
+                ]
+            },
+            {
+                "id": 88,
+                "name": "Cumbia",
+                "parents": [
+                    {
+                        "id": 195,
+                        "name": "Hispanic American Music",
+                        "parents": [
+                            {
+                                "id": 196,
+                                "name": "Hispanic Music",
+                                "parents": [
+                                    {
+                                        "id": 315,
+                                        "name": "Regional Music",
+                                        "parents": null
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": 344,
+                "name": "South American Music",
+                "parents": [
+                    {
+                        "id": 315,
+                        "name": "Regional Music",
+                        "parents": null
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 90,
+        "name": "Cumbia mexicana",
+        "parents": [
+            {
+                "id": 88,
+                "name": "Cumbia",
+                "parents": [
+                    {
+                        "id": 195,
+                        "name": "Hispanic American Music",
+                        "parents": [
+                            {
+                                "id": 196,
+                                "name": "Hispanic Music",
+                                "parents": [
+                                    {
+                                        "id": 315,
+                                        "name": "Regional Music",
+                                        "parents": null
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": 243,
+                "name": "Mexican Music",
+                "parents": [
+                    {
+                        "id": 195,
+                        "name": "Hispanic American Music",
+                        "parents": [
+                            {
+                                "id": 196,
+                                "name": "Hispanic Music",
+                                "parents": [
+                                    {
+                                        "id": 315,
+                                        "name": "Regional Music",
+                                        "parents": null
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 91,
+        "name": "Cumbia norteña mexicana",
+        "parents": [
+            {
+                "id": 266,
+                "name": "Norteño",
+                "parents": [
+                    {
+                        "id": 243,
+                        "name": "Mexican Music",
+                        "parents": [
+                            {
+                                "id": 195,
+                                "name": "Hispanic American Music",
+                                "parents": [
+                                    {
+                                        "id": 196,
+                                        "name": "Hispanic Music",
+                                        "parents": [
+                                            {
+                                                "id": 315,
+                                                "name": "Regional Music",
+                                                "parents": null
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 93,
+        "name": "Dance-Pop",
+        "parents": [
+            {
+                "id": 92,
+                "name": "Dance",
+                "parents": null
+            },
+            {
+                "id": 279,
+                "name": "Pop",
+                "parents": null
+            }
+        ]
+    },
+    {
+        "id": 94,
+        "name": "Dancehall",
+        "parents": [
+            {
+                "id": 214,
+                "name": "Jamaican Music",
+                "parents": [
+                    {
+                        "id": 59,
+                        "name": "Caribbean Music",
+                        "parents": [
+                            {
+                                "id": 315,
+                                "name": "Regional Music",
+                                "parents": null
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": 313,
+                "name": "Reggae / Ska / Dancehall",
+                "parents": null
+            }
+        ]
+    },
+    {
+        "id": 96,
+        "name": "Dark Cabaret",
+        "parents": [
+            {
+                "id": 56,
+                "name": "Cabaret",
+                "parents": [
+                    {
+                        "id": 249,
+                        "name": "Musical Theatre and Entertainment",
+                        "parents": null
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 97,
+        "name": "Dark Jazz",
+        "parents": [
+            {
+                "id": 216,
+                "name": "Jazz",
+                "parents": null
+            }
+        ]
+    },
+    {
+        "id": 101,
+        "name": "Deconstructed Club",
+        "parents": [
+            {
+                "id": 131,
+                "name": "Electronic Dance Music",
+                "parents": [
+                    {
+                        "id": 92,
+                        "name": "Dance",
+                        "parents": null
+                    },
+                    {
+                        "id": 130,
+                        "name": "Electronic",
+                        "parents": null
+                    }
+                ]
+            },
+            {
+                "id": 288,
+                "name": "Post-Industrial",
+                "parents": [
+                    {
+                        "id": 208,
+                        "name": "Industrial & Noise",
+                        "parents": null
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 102,
+        "name": "Deep House",
+        "parents": [
+            {
+                "id": 198,
+                "name": "House",
+                "parents": [
+                    {
+                        "id": 131,
+                        "name": "Electronic Dance Music",
+                        "parents": [
+                            {
+                                "id": 92,
+                                "name": "Dance",
+                                "parents": null
+                            },
+                            {
+                                "id": 130,
+                                "name": "Electronic",
+                                "parents": null
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 103,
+        "name": "Deep Soul",
+        "parents": [
+            {
+                "id": 341,
+                "name": "Soul",
+                "parents": null
+            }
+        ]
+    },
+    {
+        "id": 104,
+        "name": "Delta Blues",
+        "parents": [
+            {
+                "id": 82,
+                "name": "Country Blues",
+                "parents": [
+                    {
+                        "id": 25,
+                        "name": "American Folk Music",
+                        "parents": [
+                            {
+                                "id": 268,
+                                "name": "Northern American Music",
+                                "parents": [
+                                    {
+                                        "id": 315,
+                                        "name": "Regional Music",
+                                        "parents": null
+                                    }
+                                ]
+                            },
+                            {
+                                "id": 366,
+                                "name": "Traditional Folk Music",
+                                "parents": [
+                                    {
+                                        "id": 149,
+                                        "name": "Folk",
+                                        "parents": null
+                                    },
+                                    {
+                                        "id": 315,
+                                        "name": "Regional Music",
+                                        "parents": null
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": 41,
+                        "name": "Blues",
+                        "parents": null
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 105,
+        "name": "Dembow",
+        "parents": [
+            {
+                "id": 59,
+                "name": "Caribbean Music",
+                "parents": [
+                    {
+                        "id": 315,
+                        "name": "Regional Music",
+                        "parents": null
+                    }
+                ]
+            },
+            {
+                "id": 195,
+                "name": "Hispanic American Music",
+                "parents": [
+                    {
+                        "id": 196,
+                        "name": "Hispanic Music",
+                        "parents": [
+                            {
+                                "id": 315,
+                                "name": "Regional Music",
+                                "parents": null
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 107,
+        "name": "Detroit Trap",
+        "parents": [
+            {
+                "id": 368,
+                "name": "Trap",
+                "parents": [
+                    {
+                        "id": 192,
+                        "name": "Hip Hop",
+                        "parents": null
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 108,
+        "name": "Digicore",
+        "parents": [
+            {
+                "id": 192,
+                "name": "Hip Hop",
+                "parents": null
+            }
+        ]
+    },
+    {
+        "id": 109,
+        "name": "Digital Hardcore",
+        "parents": [
+            {
+                "id": 186,
+                "name": "Hardcore [EDM]",
+                "parents": [
+                    {
+                        "id": 131,
+                        "name": "Electronic Dance Music",
+                        "parents": [
+                            {
+                                "id": 92,
+                                "name": "Dance",
+                                "parents": null
+                            },
+                            {
+                                "id": 130,
+                                "name": "Electronic",
+                                "parents": null
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": 302,
+                "name": "Punk",
+                "parents": null
+            }
+        ]
+    },
+    {
+        "id": 110,
+        "name": "Dirty South",
+        "parents": [
+            {
+                "id": 192,
+                "name": "Hip Hop",
+                "parents": null
+            }
+        ]
+    },
+    {
+        "id": 111,
+        "name": "Disco",
+        "parents": [
+            {
+                "id": 92,
+                "name": "Dance",
+                "parents": null
+            }
+        ]
+    },
+    {
+        "id": 112,
+        "name": "Doo-Wop",
+        "parents": [
+            {
+                "id": 304,
+                "name": "R&B",
+                "parents": null
+            }
+        ]
+    },
+    {
+        "id": 113,
+        "name": "Downtempo",
+        "parents": [
+            {
+                "id": 66,
+                "name": "Chillout",
+                "parents": [
+                    {
+                        "id": 130,
+                        "name": "Electronic",
+                        "parents": null
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 114,
+        "name": "Dream Pop",
+        "parents": [
+            {
+                "id": 20,
+                "name": "Alternative Rock",
+                "parents": [
+                    {
+                        "id": 318,
+                        "name": "Rock",
+                        "parents": null
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 118,
+        "name": "Drum and Bass",
+        "parents": [
+            {
+                "id": 131,
+                "name": "Electronic Dance Music",
+                "parents": [
+                    {
+                        "id": 92,
+                        "name": "Dance",
+                        "parents": null
+                    },
+                    {
+                        "id": 130,
+                        "name": "Electronic",
+                        "parents": null
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 119,
+        "name": "Drumless",
+        "parents": [
+            {
+                "id": 192,
+                "name": "Hip Hop",
+                "parents": null
+            }
+        ]
+    },
+    {
+        "id": 122,
+        "name": "East Coast Hip Hop",
+        "parents": [
+            {
+                "id": 329,
+                "name": "Scenes & Movements",
+                "parents": null
+            }
+        ]
+    },
+    {
+        "id": 123,
+        "name": "Electric Blues",
+        "parents": [
+            {
+                "id": 41,
+                "name": "Blues",
+                "parents": null
+            }
+        ]
+    },
+    {
+        "id": 124,
+        "name": "Electro",
+        "parents": [
+            {
+                "id": 131,
+                "name": "Electronic Dance Music",
+                "parents": [
+                    {
+                        "id": 92,
+                        "name": "Dance",
+                        "parents": null
+                    },
+                    {
+                        "id": 130,
+                        "name": "Electronic",
+                        "parents": null
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 126,
+        "name": "Electro House",
+        "parents": [
+            {
+                "id": 198,
+                "name": "House",
+                "parents": [
+                    {
+                        "id": 131,
+                        "name": "Electronic Dance Music",
+                        "parents": [
+                            {
+                                "id": 92,
+                                "name": "Dance",
+                                "parents": null
+                            },
+                            {
+                                "id": 130,
+                                "name": "Electronic",
+                                "parents": null
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 125,
+        "name": "Electro Disco",
+        "parents": [
+            {
+                "id": 111,
+                "name": "Disco",
+                "parents": [
+                    {
+                        "id": 92,
+                        "name": "Dance",
+                        "parents": null
+                    }
+                ]
+            },
+            {
+                "id": 131,
+                "name": "Electronic Dance Music",
+                "parents": [
+                    {
+                        "id": 92,
+                        "name": "Dance",
+                        "parents": null
+                    },
+                    {
+                        "id": 130,
+                        "name": "Electronic",
+                        "parents": null
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 128,
+        "name": "Electro-Industrial",
+        "parents": [
+            {
+                "id": 130,
+                "name": "Electronic",
+                "parents": null
+            },
+            {
+                "id": 288,
+                "name": "Post-Industrial",
+                "parents": [
+                    {
+                        "id": 208,
+                        "name": "Industrial & Noise",
+                        "parents": null
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 129,
+        "name": "Electroclash",
+        "parents": [
+            {
+                "id": 131,
+                "name": "Electronic Dance Music",
+                "parents": [
+                    {
+                        "id": 92,
+                        "name": "Dance",
+                        "parents": null
+                    },
+                    {
+                        "id": 130,
+                        "name": "Electronic",
+                        "parents": null
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 130,
+        "name": "Electronic",
+        "parents": null
+    },
+    {
+        "id": 132,
+        "name": "Electropop",
+        "parents": [
+            {
+                "id": 130,
+                "name": "Electronic",
+                "parents": null
+            },
+            {
+                "id": 279,
+                "name": "Pop",
+                "parents": null
+            }
+        ]
+    },
+    {
+        "id": 134,
+        "name": "Emo Rap",
+        "parents": [
+            {
+                "id": 192,
+                "name": "Hip Hop",
+                "parents": null
+            }
+        ]
+    },
+    {
+        "id": 135,
+        "name": "Emo-Pop",
+        "parents": [
+            {
+                "id": 20,
+                "name": "Alternative Rock",
+                "parents": [
+                    {
+                        "id": 318,
+                        "name": "Rock",
+                        "parents": null
+                    }
+                ]
+            },
+            {
+                "id": 133,
+                "name": "Emo",
+                "parents": [
+                    {
+                        "id": 302,
+                        "name": "Punk",
+                        "parents": null
+                    },
+                    {
+                        "id": 318,
+                        "name": "Rock",
+                        "parents": null
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 136,
+        "name": "Epic Collage",
+        "parents": [
+            {
+                "id": 130,
+                "name": "Electronic",
+                "parents": null
+            },
+            {
+                "id": 342,
+                "name": "Sound Collage",
+                "parents": [
+                    {
+                        "id": 142,
+                        "name": "Experimental",
+                        "parents": null
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 137,
+        "name": "Ethereal Wave",
+        "parents": [
+            {
+                "id": 99,
+                "name": "Darkwave",
+                "parents": null
+            }
+        ]
+    },
+    {
+        "id": 138,
+        "name": "Euro House",
+        "parents": [
+            {
+                "id": 198,
+                "name": "House",
+                "parents": [
+                    {
+                        "id": 131,
+                        "name": "Electronic Dance Music",
+                        "parents": [
+                            {
+                                "id": 92,
+                                "name": "Dance",
+                                "parents": null
+                            },
+                            {
+                                "id": 130,
+                                "name": "Electronic",
+                                "parents": null
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 139,
+        "name": "Euro-Disco",
+        "parents": [
+            {
+                "id": 111,
+                "name": "Disco",
+                "parents": [
+                    {
+                        "id": 92,
+                        "name": "Dance",
+                        "parents": null
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 141,
+        "name": "Europop",
+        "parents": [
+            {
+                "id": 279,
+                "name": "Pop",
+                "parents": null
+            }
+        ]
+    },
+    {
+        "id": 143,
+        "name": "Experimental Hip Hop",
+        "parents": [
+            {
+                "id": 192,
+                "name": "Hip Hop",
+                "parents": null
+            }
+        ]
+    },
+    {
+        "id": 144,
+        "name": "Experimental Rock",
+        "parents": [
+            {
+                "id": 318,
+                "name": "Rock",
+                "parents": null
+            }
+        ]
+    },
+    {
+        "id": 145,
+        "name": "Fanfare",
+        "parents": [
+            {
+                "id": 140,
+                "name": "European Music",
+                "parents": [
+                    {
+                        "id": 315,
+                        "name": "Regional Music",
+                        "parents": null
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 146,
+        "name": "Fidget House",
+        "parents": [
+            {
+                "id": 126,
+                "name": "Electro House",
+                "parents": [
+                    {
+                        "id": 198,
+                        "name": "House",
+                        "parents": [
+                            {
+                                "id": 131,
+                                "name": "Electronic Dance Music",
+                                "parents": [
+                                    {
+                                        "id": 92,
+                                        "name": "Dance",
+                                        "parents": null
+                                    },
+                                    {
+                                        "id": 130,
+                                        "name": "Electronic",
+                                        "parents": null
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 147,
+        "name": "Field Recordings",
+        "parents": null
+    },
+    {
+        "id": 148,
+        "name": "Film Soundtrack",
+        "parents": [
+            {
+                "id": 343,
+                "name": "Soundtrack",
+                "parents": [
+                    {
+                        "id": 106,
+                        "name": "Descriptor",
+                        "parents": null
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 150,
+        "name": "Folk Pop",
+        "parents": [
+            {
+                "id": 78,
+                "name": "Contemporary Folk",
+                "parents": [
+                    {
+                        "id": 149,
+                        "name": "Folk",
+                        "parents": null
+                    }
+                ]
+            },
+            {
+                "id": 279,
+                "name": "Pop",
+                "parents": null
+            }
+        ]
+    },
+    {
+        "id": 151,
+        "name": "Folk Punk",
+        "parents": [
+            {
+                "id": 302,
+                "name": "Punk",
+                "parents": null
+            }
+        ]
+    },
+    {
+        "id": 152,
+        "name": "Folk Rock",
+        "parents": [
+            {
+                "id": 318,
+                "name": "Rock",
+                "parents": null
+            }
+        ]
+    },
+    {
+        "id": 153,
+        "name": "Footwork",
+        "parents": [
+            {
+                "id": 131,
+                "name": "Electronic Dance Music",
+                "parents": [
+                    {
+                        "id": 92,
+                        "name": "Dance",
+                        "parents": null
+                    },
+                    {
+                        "id": 130,
+                        "name": "Electronic",
+                        "parents": null
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 154,
+        "name": "Free Improvisation",
+        "parents": [
+            {
+                "id": 142,
+                "name": "Experimental",
+                "parents": null
+            }
+        ]
+    },
+    {
+        "id": 155,
+        "name": "Freestyle",
+        "parents": [
+            {
+                "id": 93,
+                "name": "Dance-Pop",
+                "parents": [
+                    {
+                        "id": 92,
+                        "name": "Dance",
+                        "parents": null
+                    },
+                    {
+                        "id": 279,
+                        "name": "Pop",
+                        "parents": null
+                    }
+                ]
+            },
+            {
+                "id": 131,
+                "name": "Electronic Dance Music",
+                "parents": [
+                    {
+                        "id": 92,
+                        "name": "Dance",
+                        "parents": null
+                    },
+                    {
+                        "id": 130,
+                        "name": "Electronic",
+                        "parents": null
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 156,
+        "name": "French Electro",
+        "parents": [
+            {
+                "id": 126,
+                "name": "Electro House",
+                "parents": [
+                    {
+                        "id": 198,
+                        "name": "House",
+                        "parents": [
+                            {
+                                "id": 131,
+                                "name": "Electronic Dance Music",
+                                "parents": [
+                                    {
+                                        "id": 92,
+                                        "name": "Dance",
+                                        "parents": null
+                                    },
+                                    {
+                                        "id": 130,
+                                        "name": "Electronic",
+                                        "parents": null
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 157,
+        "name": "Funk",
+        "parents": [
+            {
+                "id": 304,
+                "name": "R&B",
+                "parents": null
+            }
+        ]
+    },
+    {
+        "id": 158,
+        "name": "Funk Mandelão",
+        "parents": [
+            {
+                "id": 131,
+                "name": "Electronic Dance Music",
+                "parents": [
+                    {
+                        "id": 92,
+                        "name": "Dance",
+                        "parents": null
+                    },
+                    {
+                        "id": 130,
+                        "name": "Electronic",
+                        "parents": null
+                    }
+                ]
+            },
+            {
+                "id": 160,
+                "name": "Funk brasileiro",
+                "parents": [
+                    {
+                        "id": 48,
+                        "name": "Brazilian Music",
+                        "parents": [
+                            {
+                                "id": 344,
+                                "name": "South American Music",
+                                "parents": [
+                                    {
+                                        "id": 315,
+                                        "name": "Regional Music",
+                                        "parents": null
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 159,
+        "name": "Funk Rock",
+        "parents": [
+            {
+                "id": 318,
+                "name": "Rock",
+                "parents": null
+            }
+        ]
+    },
+    {
+        "id": 161,
+        "name": "Funktronica",
+        "parents": [
+            {
+                "id": 130,
+                "name": "Electronic",
+                "parents": null
+            }
+        ]
+    },
+    {
+        "id": 162,
+        "name": "Funky House",
+        "parents": [
+            {
+                "id": 198,
+                "name": "House",
+                "parents": [
+                    {
+                        "id": 131,
+                        "name": "Electronic Dance Music",
+                        "parents": [
+                            {
+                                "id": 92,
+                                "name": "Dance",
+                                "parents": null
+                            },
+                            {
+                                "id": 130,
+                                "name": "Electronic",
+                                "parents": null
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 163,
+        "name": "Future Garage",
+        "parents": [
+            {
+                "id": 375,
+                "name": "UK Garage",
+                "parents": [
+                    {
+                        "id": 131,
+                        "name": "Electronic Dance Music",
+                        "parents": [
+                            {
+                                "id": 92,
+                                "name": "Dance",
+                                "parents": null
+                            },
+                            {
+                                "id": 130,
+                                "name": "Electronic",
+                                "parents": null
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 164,
+        "name": "Future Riddim",
+        "parents": [
+            {
+                "id": 317,
+                "name": "Riddim",
+                "parents": [
+                    {
+                        "id": 120,
+                        "name": "Dubstep",
+                        "parents": [
+                            {
+                                "id": 131,
+                                "name": "Electronic Dance Music",
+                                "parents": [
+                                    {
+                                        "id": 92,
+                                        "name": "Dance",
+                                        "parents": null
+                                    },
+                                    {
+                                        "id": 130,
+                                        "name": "Electronic",
+                                        "parents": null
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 165,
+        "name": "Futuristic Swag",
+        "parents": [
+            {
+                "id": 281,
+                "name": "Pop Rap",
+                "parents": [
+                    {
+                        "id": 192,
+                        "name": "Hip Hop",
+                        "parents": null
+                    }
+                ]
+            },
+            {
+                "id": 368,
+                "name": "Trap",
+                "parents": [
+                    {
+                        "id": 192,
+                        "name": "Hip Hop",
+                        "parents": null
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 166,
+        "name": "G-Funk",
+        "parents": [
+            {
+                "id": 192,
+                "name": "Hip Hop",
+                "parents": null
+            }
+        ]
+    },
+    {
+        "id": 167,
+        "name": "Gangsta Rap",
+        "parents": [
+            {
+                "id": 184,
+                "name": "Hardcore Hip Hop",
+                "parents": [
+                    {
+                        "id": 192,
+                        "name": "Hip Hop",
+                        "parents": null
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 168,
+        "name": "Garage Rock",
+        "parents": [
+            {
+                "id": 318,
+                "name": "Rock",
+                "parents": null
+            }
+        ]
+    },
+    {
+        "id": 169,
+        "name": "Garage Rock Revival",
+        "parents": [
+            {
+                "id": 168,
+                "name": "Garage Rock",
+                "parents": [
+                    {
+                        "id": 318,
+                        "name": "Rock",
+                        "parents": null
+                    }
+                ]
+            },
+            {
+                "id": 206,
+                "name": "Indie Rock",
+                "parents": [
+                    {
+                        "id": 20,
+                        "name": "Alternative Rock",
+                        "parents": [
+                            {
+                                "id": 318,
+                                "name": "Rock",
+                                "parents": null
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 170,
+        "name": "Glam Metal",
+        "parents": [
+            {
+                "id": 182,
+                "name": "Hard Rock",
+                "parents": [
+                    {
+                        "id": 318,
+                        "name": "Rock",
+                        "parents": null
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 171,
+        "name": "Glam Rock",
+        "parents": [
+            {
+                "id": 318,
+                "name": "Rock",
+                "parents": null
+            }
+        ]
+    },
+    {
+        "id": 172,
+        "name": "Glitch Hop",
+        "parents": [
+            {
+                "id": 130,
+                "name": "Electronic",
+                "parents": null
+            }
+        ]
+    },
+    {
+        "id": 173,
+        "name": "Glitch Pop",
+        "parents": [
+            {
+                "id": 207,
+                "name": "Indietronica",
+                "parents": [
+                    {
+                        "id": 130,
+                        "name": "Electronic",
+                        "parents": null
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 174,
+        "name": "Gothic Metal",
+        "parents": [
+            {
+                "id": 241,
+                "name": "Metal",
+                "parents": null
+            }
+        ]
+    },
+    {
+        "id": 175,
+        "name": "Gothic Rock",
+        "parents": [
+            {
+                "id": 290,
+                "name": "Post-Punk",
+                "parents": [
+                    {
+                        "id": 302,
+                        "name": "Punk",
+                        "parents": null
+                    },
+                    {
+                        "id": 318,
+                        "name": "Rock",
+                        "parents": null
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 176,
+        "name": "Gqom",
+        "parents": [
+            {
+                "id": 198,
+                "name": "House",
+                "parents": [
+                    {
+                        "id": 131,
+                        "name": "Electronic Dance Music",
+                        "parents": [
+                            {
+                                "id": 92,
+                                "name": "Dance",
+                                "parents": null
+                            },
+                            {
+                                "id": 130,
+                                "name": "Electronic",
+                                "parents": null
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": 345,
+                "name": "Southern African Music",
+                "parents": [
+                    {
+                        "id": 11,
+                        "name": "African Music",
+                        "parents": [
+                            {
+                                "id": 315,
+                                "name": "Regional Music",
+                                "parents": null
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 177,
+        "name": "Gregorian Chant",
+        "parents": [
+            {
+                "id": 275,
+                "name": "Plainsong",
+                "parents": [
+                    {
+                        "id": 71,
+                        "name": "Christian Liturgical Music",
+                        "parents": [
+                            {
+                                "id": 315,
+                                "name": "Regional Music",
+                                "parents": null
+                            }
+                        ]
+                    },
+                    {
+                        "id": 238,
+                        "name": "Medieval Classical Music",
+                        "parents": [
+                            {
+                                "id": 140,
+                                "name": "European Music",
+                                "parents": [
+                                    {
+                                        "id": 315,
+                                        "name": "Regional Music",
+                                        "parents": null
+                                    }
+                                ]
+                            },
+                            {
+                                "id": 383,
+                                "name": "Western Classical Music",
+                                "parents": [
+                                    {
+                                        "id": 73,
+                                        "name": "Classical Music",
+                                        "parents": null
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 178,
+        "name": "Grime",
+        "parents": [
+            {
+                "id": 131,
+                "name": "Electronic Dance Music",
+                "parents": [
+                    {
+                        "id": 92,
+                        "name": "Dance",
+                        "parents": null
+                    },
+                    {
+                        "id": 130,
+                        "name": "Electronic",
+                        "parents": null
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 179,
+        "name": "Groove Metal",
+        "parents": [
+            {
+                "id": 241,
+                "name": "Metal",
+                "parents": null
+            }
+        ]
+    },
+    {
+        "id": 180,
+        "name": "Grunge",
+        "parents": [
+            {
+                "id": 20,
+                "name": "Alternative Rock",
+                "parents": [
+                    {
+                        "id": 318,
+                        "name": "Rock",
+                        "parents": null
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 181,
+        "name": "Hard Bop",
+        "parents": [
+            {
+                "id": 216,
+                "name": "Jazz",
+                "parents": null
+            }
+        ]
+    },
+    {
+        "id": 182,
+        "name": "Hard Rock",
+        "parents": [
+            {
+                "id": 318,
+                "name": "Rock",
+                "parents": null
+            }
+        ]
+    },
+    {
+        "id": 183,
+        "name": "Hardcore Breaks",
+        "parents": [
+            {
+                "id": 50,
+                "name": "Breakbeat Hardcore",
+                "parents": [
+                    {
+                        "id": 49,
+                        "name": "Breakbeat",
+                        "parents": [
+                            {
+                                "id": 131,
+                                "name": "Electronic Dance Music",
+                                "parents": [
+                                    {
+                                        "id": 92,
+                                        "name": "Dance",
+                                        "parents": null
+                                    },
+                                    {
+                                        "id": 130,
+                                        "name": "Electronic",
+                                        "parents": null
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": 186,
+                        "name": "Hardcore [EDM]",
+                        "parents": [
+                            {
+                                "id": 131,
+                                "name": "Electronic Dance Music",
+                                "parents": [
+                                    {
+                                        "id": 92,
+                                        "name": "Dance",
+                                        "parents": null
+                                    },
+                                    {
+                                        "id": 130,
+                                        "name": "Electronic",
+                                        "parents": null
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 184,
+        "name": "Hardcore Hip Hop",
+        "parents": [
+            {
+                "id": 192,
+                "name": "Hip Hop",
+                "parents": null
+            }
+        ]
+    },
+    {
+        "id": 185,
+        "name": "Hardcore Punk",
+        "parents": [
+            {
+                "id": 187,
+                "name": "Hardcore [Punk]",
+                "parents": [
+                    {
+                        "id": 302,
+                        "name": "Punk",
+                        "parents": null
+                    },
+                    {
+                        "id": 318,
+                        "name": "Rock",
+                        "parents": null
+                    }
+                ]
+            },
+            {
+                "id": 303,
+                "name": "Punk Rock",
+                "parents": [
+                    {
+                        "id": 302,
+                        "name": "Punk",
+                        "parents": null
+                    },
+                    {
+                        "id": 318,
+                        "name": "Rock",
+                        "parents": null
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 188,
+        "name": "Heartland Rock",
+        "parents": [
+            {
+                "id": 318,
+                "name": "Rock",
+                "parents": null
+            }
+        ]
+    },
+    {
+        "id": 189,
+        "name": "Heavy Metal",
+        "parents": [
+            {
+                "id": 241,
+                "name": "Metal",
+                "parents": null
+            }
+        ]
+    },
+    {
+        "id": 190,
+        "name": "Heavy Psych",
+        "parents": [
+            {
+                "id": 182,
+                "name": "Hard Rock",
+                "parents": [
+                    {
+                        "id": 318,
+                        "name": "Rock",
+                        "parents": null
+                    }
+                ]
+            },
+            {
+                "id": 301,
+                "name": "Psychedelic Rock",
+                "parents": [
+                    {
+                        "id": 300,
+                        "name": "Psychedelia",
+                        "parents": null
+                    },
+                    {
+                        "id": 318,
+                        "name": "Rock",
+                        "parents": null
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 192,
+        "name": "Hip Hop",
+        "parents": null
+    },
+    {
+        "id": 193,
+        "name": "Hip House",
+        "parents": [
+            {
+                "id": 198,
+                "name": "House",
+                "parents": [
+                    {
+                        "id": 131,
+                        "name": "Electronic Dance Music",
+                        "parents": [
+                            {
+                                "id": 92,
+                                "name": "Dance",
+                                "parents": null
+                            },
+                            {
+                                "id": 130,
+                                "name": "Electronic",
+                                "parents": null
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 197,
+        "name": "Horrorcore",
+        "parents": [
+            {
+                "id": 184,
+                "name": "Hardcore Hip Hop",
+                "parents": [
+                    {
+                        "id": 192,
+                        "name": "Hip Hop",
+                        "parents": null
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 198,
+        "name": "House",
+        "parents": [
+            {
+                "id": 131,
+                "name": "Electronic Dance Music",
+                "parents": [
+                    {
+                        "id": 92,
+                        "name": "Dance",
+                        "parents": null
+                    },
+                    {
+                        "id": 130,
+                        "name": "Electronic",
+                        "parents": null
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 199,
+        "name": "Hyperpop",
+        "parents": [
+            {
+                "id": 130,
+                "name": "Electronic",
+                "parents": null
+            },
+            {
+                "id": 279,
+                "name": "Pop",
+                "parents": null
+            }
+        ]
+    },
+    {
+        "id": 200,
+        "name": "Hyphy",
+        "parents": [
+            {
+                "id": 192,
+                "name": "Hip Hop",
+                "parents": null
+            }
+        ]
+    },
+    {
+        "id": 201,
+        "name": "Hypnagogic Pop",
+        "parents": [
+            {
+                "id": 251,
+                "name": "Neo-Psychedelia",
+                "parents": [
+                    {
+                        "id": 300,
+                        "name": "Psychedelia",
+                        "parents": null
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 202,
+        "name": "IDM",
+        "parents": [
+            {
+                "id": 130,
+                "name": "Electronic",
+                "parents": null
+            }
+        ]
+    },
+    {
+        "id": 203,
+        "name": "Impressionism",
+        "parents": [
+            {
+                "id": 246,
+                "name": "Modern Classical",
+                "parents": [
+                    {
+                        "id": 383,
+                        "name": "Western Classical Music",
+                        "parents": [
+                            {
+                                "id": 73,
+                                "name": "Classical Music",
+                                "parents": null
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 204,
+        "name": "Indie Folk",
+        "parents": [
+            {
+                "id": 78,
+                "name": "Contemporary Folk",
+                "parents": [
+                    {
+                        "id": 149,
+                        "name": "Folk",
+                        "parents": null
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 205,
+        "name": "Indie Pop",
+        "parents": [
+            {
+                "id": 279,
+                "name": "Pop",
+                "parents": null
+            }
+        ]
+    },
+    {
+        "id": 206,
+        "name": "Indie Rock",
+        "parents": [
+            {
+                "id": 20,
+                "name": "Alternative Rock",
+                "parents": [
+                    {
+                        "id": 318,
+                        "name": "Rock",
+                        "parents": null
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 207,
+        "name": "Indietronica",
+        "parents": [
+            {
+                "id": 130,
+                "name": "Electronic",
+                "parents": null
+            }
+        ]
+    },
+    {
+        "id": 209,
+        "name": "Industrial Hip Hop",
+        "parents": [
+            {
+                "id": 143,
+                "name": "Experimental Hip Hop",
+                "parents": [
+                    {
+                        "id": 192,
+                        "name": "Hip Hop",
+                        "parents": null
+                    }
+                ]
+            },
+            {
+                "id": 288,
+                "name": "Post-Industrial",
+                "parents": [
+                    {
+                        "id": 208,
+                        "name": "Industrial & Noise",
+                        "parents": null
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 210,
+        "name": "Industrial Metal",
+        "parents": [
+            {
+                "id": 241,
+                "name": "Metal",
+                "parents": null
+            },
+            {
+                "id": 288,
+                "name": "Post-Industrial",
+                "parents": [
+                    {
+                        "id": 208,
+                        "name": "Industrial & Noise",
+                        "parents": null
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 211,
+        "name": "Industrial Rock",
+        "parents": [
+            {
+                "id": 288,
+                "name": "Post-Industrial",
+                "parents": [
+                    {
+                        "id": 208,
+                        "name": "Industrial & Noise",
+                        "parents": null
+                    }
+                ]
+            },
+            {
+                "id": 318,
+                "name": "Rock",
+                "parents": null
+            }
+        ]
+    },
+    {
+        "id": 212,
+        "name": "Instrumental Hip Hop",
+        "parents": [
+            {
+                "id": 192,
+                "name": "Hip Hop",
+                "parents": null
+            }
+        ]
+    },
+    {
+        "id": 213,
+        "name": "Interview",
+        "parents": [
+            {
+                "id": 352,
+                "name": "Spoken Word",
+                "parents": null
+            }
+        ]
+    },
+    {
+        "id": 215,
+        "name": "Jangle Pop",
+        "parents": [
+            {
+                "id": 20,
+                "name": "Alternative Rock",
+                "parents": [
+                    {
+                        "id": 318,
+                        "name": "Rock",
+                        "parents": null
+                    }
+                ]
+            },
+            {
+                "id": 283,
+                "name": "Pop Rock",
+                "parents": [
+                    {
+                        "id": 279,
+                        "name": "Pop",
+                        "parents": null
+                    },
+                    {
+                        "id": 318,
+                        "name": "Rock",
+                        "parents": null
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 216,
+        "name": "Jazz",
+        "parents": null
+    },
+    {
+        "id": 217,
+        "name": "Jazz Fusion",
+        "parents": [
+            {
+                "id": 216,
+                "name": "Jazz",
+                "parents": null
+            }
+        ]
+    },
+    {
+        "id": 218,
+        "name": "Jazz Poetry",
+        "parents": [
+            {
+                "id": 216,
+                "name": "Jazz",
+                "parents": null
+            },
+            {
+                "id": 278,
+                "name": "Poetry",
+                "parents": [
+                    {
+                        "id": 352,
+                        "name": "Spoken Word",
+                        "parents": null
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 219,
+        "name": "Jazz Pop",
+        "parents": [
+            {
+                "id": 279,
+                "name": "Pop",
+                "parents": null
+            }
+        ]
+    },
+    {
+        "id": 220,
+        "name": "Jazz Rap",
+        "parents": [
+            {
+                "id": 192,
+                "name": "Hip Hop",
+                "parents": null
+            }
+        ]
+    },
+    {
+        "id": 221,
+        "name": "Jazz-Funk",
+        "parents": [
+            {
+                "id": 157,
+                "name": "Funk",
+                "parents": [
+                    {
+                        "id": 304,
+                        "name": "R&B",
+                        "parents": null
+                    }
+                ]
+            },
+            {
+                "id": 216,
+                "name": "Jazz",
+                "parents": null
+            }
+        ]
+    },
+    {
+        "id": 222,
+        "name": "Jazz-Rock",
+        "parents": [
+            {
+                "id": 318,
+                "name": "Rock",
+                "parents": null
+            }
+        ]
+    },
+    {
+        "id": 224,
+        "name": "Jersey Club",
+        "parents": [
+            {
+                "id": 121,
+                "name": "East Coast Club",
+                "parents": [
+                    {
+                        "id": 131,
+                        "name": "Electronic Dance Music",
+                        "parents": [
+                            {
+                                "id": 92,
+                                "name": "Dance",
+                                "parents": null
+                            },
+                            {
+                                "id": 130,
+                                "name": "Electronic",
+                                "parents": null
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 225,
+        "name": "Jibaro",
+        "parents": [
+            {
+                "id": 58,
+                "name": "Caribbean Folk Music",
+                "parents": [
+                    {
+                        "id": 59,
+                        "name": "Caribbean Music",
+                        "parents": [
+                            {
+                                "id": 315,
+                                "name": "Regional Music",
+                                "parents": null
+                            }
+                        ]
+                    },
+                    {
+                        "id": 366,
+                        "name": "Traditional Folk Music",
+                        "parents": [
+                            {
+                                "id": 149,
+                                "name": "Folk",
+                                "parents": null
+                            },
+                            {
+                                "id": 315,
+                                "name": "Regional Music",
+                                "parents": null
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": 194,
+                "name": "Hispanic American Folk Music",
+                "parents": [
+                    {
+                        "id": 195,
+                        "name": "Hispanic American Music",
+                        "parents": [
+                            {
+                                "id": 196,
+                                "name": "Hispanic Music",
+                                "parents": [
+                                    {
+                                        "id": 315,
+                                        "name": "Regional Music",
+                                        "parents": null
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": 366,
+                        "name": "Traditional Folk Music",
+                        "parents": [
+                            {
+                                "id": 149,
+                                "name": "Folk",
+                                "parents": null
+                            },
+                            {
+                                "id": 315,
+                                "name": "Regional Music",
+                                "parents": null
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 226,
+        "name": "Latin Alternative",
+        "parents": [
+            {
+                "id": 195,
+                "name": "Hispanic American Music",
+                "parents": [
+                    {
+                        "id": 196,
+                        "name": "Hispanic Music",
+                        "parents": [
+                            {
+                                "id": 315,
+                                "name": "Regional Music",
+                                "parents": null
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 227,
+        "name": "Latin Disco",
+        "parents": [
+            {
+                "id": 111,
+                "name": "Disco",
+                "parents": [
+                    {
+                        "id": 92,
+                        "name": "Dance",
+                        "parents": null
+                    }
+                ]
+            },
+            {
+                "id": 195,
+                "name": "Hispanic American Music",
+                "parents": [
+                    {
+                        "id": 196,
+                        "name": "Hispanic Music",
+                        "parents": [
+                            {
+                                "id": 315,
+                                "name": "Regional Music",
+                                "parents": null
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 228,
+        "name": "Latin Electronic",
+        "parents": [
+            {
+                "id": 130,
+                "name": "Electronic",
+                "parents": null
+            },
+            {
+                "id": 195,
+                "name": "Hispanic American Music",
+                "parents": [
+                    {
+                        "id": 196,
+                        "name": "Hispanic Music",
+                        "parents": [
+                            {
+                                "id": 315,
+                                "name": "Regional Music",
+                                "parents": null
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 229,
+        "name": "Latin Pop",
+        "parents": [
+            {
+                "id": 195,
+                "name": "Hispanic American Music",
+                "parents": [
+                    {
+                        "id": 196,
+                        "name": "Hispanic Music",
+                        "parents": [
+                            {
+                                "id": 315,
+                                "name": "Regional Music",
+                                "parents": null
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": 279,
+                "name": "Pop",
+                "parents": null
+            }
+        ]
+    },
+    {
+        "id": 230,
+        "name": "Latin Rock",
+        "parents": [
+            {
+                "id": 195,
+                "name": "Hispanic American Music",
+                "parents": [
+                    {
+                        "id": 196,
+                        "name": "Hispanic Music",
+                        "parents": [
+                            {
+                                "id": 315,
+                                "name": "Regional Music",
+                                "parents": null
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": 318,
+                "name": "Rock",
+                "parents": null
+            }
+        ]
+    },
+    {
+        "id": 231,
+        "name": "Latin Soul",
+        "parents": [
+            {
+                "id": 195,
+                "name": "Hispanic American Music",
+                "parents": [
+                    {
+                        "id": 196,
+                        "name": "Hispanic Music",
+                        "parents": [
+                            {
+                                "id": 315,
+                                "name": "Regional Music",
+                                "parents": null
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": 341,
+                "name": "Soul",
+                "parents": null
+            }
+        ]
+    },
+    {
+        "id": 232,
+        "name": "Liquid Drum and Bass",
+        "parents": [
+            {
+                "id": 118,
+                "name": "Drum and Bass",
+                "parents": [
+                    {
+                        "id": 131,
+                        "name": "Electronic Dance Music",
+                        "parents": [
+                            {
+                                "id": 92,
+                                "name": "Dance",
+                                "parents": null
+                            },
+                            {
+                                "id": 130,
+                                "name": "Electronic",
+                                "parents": null
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 233,
+        "name": "Lo-Fi Hip Hop",
+        "parents": [
+            {
+                "id": 192,
+                "name": "Hip Hop",
+                "parents": null
+            }
+        ]
+    },
+    {
+        "id": 234,
+        "name": "Lovers Rock",
+        "parents": [
+            {
+                "id": 312,
+                "name": "Reggae",
+                "parents": [
+                    {
+                        "id": 214,
+                        "name": "Jamaican Music",
+                        "parents": [
+                            {
+                                "id": 59,
+                                "name": "Caribbean Music",
+                                "parents": [
+                                    {
+                                        "id": 315,
+                                        "name": "Regional Music",
+                                        "parents": null
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": 313,
+                        "name": "Reggae / Ska / Dancehall",
+                        "parents": null
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 235,
+        "name": "Lowend",
+        "parents": [
+            {
+                "id": 192,
+                "name": "Hip Hop",
+                "parents": null
+            }
+        ]
+    },
+    {
+        "id": 236,
+        "name": "Mambo",
+        "parents": [
+            {
+                "id": 86,
+                "name": "Cuban Music",
+                "parents": [
+                    {
+                        "id": 59,
+                        "name": "Caribbean Music",
+                        "parents": [
+                            {
+                                "id": 315,
+                                "name": "Regional Music",
+                                "parents": null
+                            }
+                        ]
+                    },
+                    {
+                        "id": 195,
+                        "name": "Hispanic American Music",
+                        "parents": [
+                            {
+                                "id": 196,
+                                "name": "Hispanic Music",
+                                "parents": [
+                                    {
+                                        "id": 315,
+                                        "name": "Regional Music",
+                                        "parents": null
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 237,
+        "name": "Mariachi",
+        "parents": [
+            {
+                "id": 243,
+                "name": "Mexican Music",
+                "parents": [
+                    {
+                        "id": 195,
+                        "name": "Hispanic American Music",
+                        "parents": [
+                            {
+                                "id": 196,
+                                "name": "Hispanic Music",
+                                "parents": [
+                                    {
+                                        "id": 315,
+                                        "name": "Regional Music",
+                                        "parents": null
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 239,
+        "name": "Memphis Rap",
+        "parents": [
+            {
+                "id": 184,
+                "name": "Hardcore Hip Hop",
+                "parents": [
+                    {
+                        "id": 192,
+                        "name": "Hip Hop",
+                        "parents": null
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 240,
+        "name": "Merengue",
+        "parents": [
+            {
+                "id": 59,
+                "name": "Caribbean Music",
+                "parents": [
+                    {
+                        "id": 315,
+                        "name": "Regional Music",
+                        "parents": null
+                    }
+                ]
+            },
+            {
+                "id": 195,
+                "name": "Hispanic American Music",
+                "parents": [
+                    {
+                        "id": 196,
+                        "name": "Hispanic Music",
+                        "parents": [
+                            {
+                                "id": 315,
+                                "name": "Regional Music",
+                                "parents": null
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 242,
+        "name": "Metalcore",
+        "parents": [
+            {
+                "id": 187,
+                "name": "Hardcore [Punk]",
+                "parents": [
+                    {
+                        "id": 302,
+                        "name": "Punk",
+                        "parents": null
+                    },
+                    {
+                        "id": 318,
+                        "name": "Rock",
+                        "parents": null
+                    }
+                ]
+            },
+            {
+                "id": 241,
+                "name": "Metal",
+                "parents": null
+            }
+        ]
+    },
+    {
+        "id": 243,
+        "name": "Mexican Music",
+        "parents": [
+            {
+                "id": 195,
+                "name": "Hispanic American Music",
+                "parents": [
+                    {
+                        "id": 196,
+                        "name": "Hispanic Music",
+                        "parents": [
+                            {
+                                "id": 315,
+                                "name": "Regional Music",
+                                "parents": null
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 244,
+        "name": "Miami Bass",
+        "parents": [
+            {
+                "id": 92,
+                "name": "Dance",
+                "parents": null
+            },
+            {
+                "id": 192,
+                "name": "Hip Hop",
+                "parents": null
+            }
+        ]
+    },
+    {
+        "id": 245,
+        "name": "Minimal Wave",
+        "parents": [
+            {
+                "id": 130,
+                "name": "Electronic",
+                "parents": null
+            }
+        ]
+    },
+    {
+        "id": 247,
+        "name": "Music Hall",
+        "parents": [
+            {
+                "id": 52,
+                "name": "British Music",
+                "parents": [
+                    {
+                        "id": 140,
+                        "name": "European Music",
+                        "parents": [
+                            {
+                                "id": 315,
+                                "name": "Regional Music",
+                                "parents": null
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": 249,
+                "name": "Musical Theatre and Entertainment",
+                "parents": null
+            }
+        ]
+    },
+    {
+        "id": 250,
+        "name": "Neo-Prog",
+        "parents": [
+            {
+                "id": 298,
+                "name": "Progressive Rock",
+                "parents": [
+                    {
+                        "id": 318,
+                        "name": "Rock",
+                        "parents": null
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 251,
+        "name": "Neo-Psychedelia",
+        "parents": [
+            {
+                "id": 300,
+                "name": "Psychedelia",
+                "parents": null
+            }
+        ]
+    },
+    {
+        "id": 252,
+        "name": "Neo-Soul",
+        "parents": [
+            {
+                "id": 341,
+                "name": "Soul",
+                "parents": null
+            }
+        ]
+    },
+    {
+        "id": 253,
+        "name": "Neoperreo",
+        "parents": [
+            {
+                "id": 314,
+                "name": "Reggaetón",
+                "parents": [
+                    {
+                        "id": 195,
+                        "name": "Hispanic American Music",
+                        "parents": [
+                            {
+                                "id": 196,
+                                "name": "Hispanic Music",
+                                "parents": [
+                                    {
+                                        "id": 315,
+                                        "name": "Regional Music",
+                                        "parents": null
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 254,
+        "name": "Nervous Music",
+        "parents": [
+            {
+                "id": 192,
+                "name": "Hip Hop",
+                "parents": null
+            }
+        ]
+    },
+    {
+        "id": 255,
+        "name": "Neue Deutsche Härte",
+        "parents": [
+            {
+                "id": 18,
+                "name": "Alternative Metal",
+                "parents": [
+                    {
+                        "id": 241,
+                        "name": "Metal",
+                        "parents": null
+                    }
+                ]
+            },
+            {
+                "id": 210,
+                "name": "Industrial Metal",
+                "parents": [
+                    {
+                        "id": 241,
+                        "name": "Metal",
+                        "parents": null
+                    },
+                    {
+                        "id": 288,
+                        "name": "Post-Industrial",
+                        "parents": [
+                            {
+                                "id": 208,
+                                "name": "Industrial & Noise",
+                                "parents": null
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 256,
+        "name": "New Age",
+        "parents": null
+    },
+    {
+        "id": 257,
+        "name": "New Jazz",
+        "parents": [
+            {
+                "id": 368,
+                "name": "Trap",
+                "parents": [
+                    {
+                        "id": 192,
+                        "name": "Hip Hop",
+                        "parents": null
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 258,
+        "name": "New Rave",
+        "parents": [
+            {
+                "id": 17,
+                "name": "Alternative Dance",
+                "parents": [
+                    {
+                        "id": 20,
+                        "name": "Alternative Rock",
+                        "parents": [
+                            {
+                                "id": 318,
+                                "name": "Rock",
+                                "parents": null
+                            }
+                        ]
+                    },
+                    {
+                        "id": 92,
+                        "name": "Dance",
+                        "parents": null
+                    }
+                ]
+            },
+            {
+                "id": 206,
+                "name": "Indie Rock",
+                "parents": [
+                    {
+                        "id": 20,
+                        "name": "Alternative Rock",
+                        "parents": [
+                            {
+                                "id": 318,
+                                "name": "Rock",
+                                "parents": null
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 259,
+        "name": "New Romantic",
+        "parents": [
+            {
+                "id": 329,
+                "name": "Scenes & Movements",
+                "parents": null
+            }
+        ]
+    },
+    {
+        "id": 260,
+        "name": "New Wave",
+        "parents": [
+            {
+                "id": 318,
+                "name": "Rock",
+                "parents": null
+            }
+        ]
+    },
+    {
+        "id": 262,
+        "name": "No Melody",
+        "parents": [
+            {
+                "id": 368,
+                "name": "Trap",
+                "parents": [
+                    {
+                        "id": 192,
+                        "name": "Hip Hop",
+                        "parents": null
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 264,
+        "name": "Noise Pop",
+        "parents": [
+            {
+                "id": 206,
+                "name": "Indie Rock",
+                "parents": [
+                    {
+                        "id": 20,
+                        "name": "Alternative Rock",
+                        "parents": [
+                            {
+                                "id": 318,
+                                "name": "Rock",
+                                "parents": null
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 269,
+        "name": "Nu Jazz",
+        "parents": [
+            {
+                "id": 130,
+                "name": "Electronic",
+                "parents": null
+            }
+        ]
+    },
+    {
+        "id": 270,
+        "name": "Nu Metal",
+        "parents": [
+            {
+                "id": 18,
+                "name": "Alternative Metal",
+                "parents": [
+                    {
+                        "id": 241,
+                        "name": "Metal",
+                        "parents": null
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 271,
+        "name": "Nu-Disco",
+        "parents": [
+            {
+                "id": 111,
+                "name": "Disco",
+                "parents": [
+                    {
+                        "id": 92,
+                        "name": "Dance",
+                        "parents": null
+                    }
+                ]
+            },
+            {
+                "id": 131,
+                "name": "Electronic Dance Music",
+                "parents": [
+                    {
+                        "id": 92,
+                        "name": "Dance",
+                        "parents": null
+                    },
+                    {
+                        "id": 130,
+                        "name": "Electronic",
+                        "parents": null
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 272,
+        "name": "P-Funk",
+        "parents": [
+            {
+                "id": 157,
+                "name": "Funk",
+                "parents": [
+                    {
+                        "id": 304,
+                        "name": "R&B",
+                        "parents": null
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 273,
+        "name": "Philly Soul",
+        "parents": [
+            {
+                "id": 341,
+                "name": "Soul",
+                "parents": null
+            }
+        ]
+    },
+    {
+        "id": 274,
+        "name": "Piano Rock",
+        "parents": [
+            {
+                "id": 283,
+                "name": "Pop Rock",
+                "parents": [
+                    {
+                        "id": 279,
+                        "name": "Pop",
+                        "parents": null
+                    },
+                    {
+                        "id": 318,
+                        "name": "Rock",
+                        "parents": null
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 276,
+        "name": "Plugg",
+        "parents": [
+            {
+                "id": 368,
+                "name": "Trap",
+                "parents": [
+                    {
+                        "id": 192,
+                        "name": "Hip Hop",
+                        "parents": null
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 277,
+        "name": "Plunderphonics",
+        "parents": [
+            {
+                "id": 142,
+                "name": "Experimental",
+                "parents": null
+            }
+        ]
+    },
+    {
+        "id": 278,
+        "name": "Poetry",
+        "parents": [
+            {
+                "id": 352,
+                "name": "Spoken Word",
+                "parents": null
+            }
+        ]
+    },
+    {
+        "id": 279,
+        "name": "Pop",
+        "parents": null
+    },
+    {
+        "id": 280,
+        "name": "Pop Punk",
+        "parents": [
+            {
+                "id": 303,
+                "name": "Punk Rock",
+                "parents": [
+                    {
+                        "id": 302,
+                        "name": "Punk",
+                        "parents": null
+                    },
+                    {
+                        "id": 318,
+                        "name": "Rock",
+                        "parents": null
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 281,
+        "name": "Pop Rap",
+        "parents": [
+            {
+                "id": 192,
+                "name": "Hip Hop",
+                "parents": null
+            }
+        ]
+    },
+    {
+        "id": 282,
+        "name": "Pop Reggae",
+        "parents": [
+            {
+                "id": 279,
+                "name": "Pop",
+                "parents": null
+            },
+            {
+                "id": 312,
+                "name": "Reggae",
+                "parents": [
+                    {
+                        "id": 214,
+                        "name": "Jamaican Music",
+                        "parents": [
+                            {
+                                "id": 59,
+                                "name": "Caribbean Music",
+                                "parents": [
+                                    {
+                                        "id": 315,
+                                        "name": "Regional Music",
+                                        "parents": null
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": 313,
+                        "name": "Reggae / Ska / Dancehall",
+                        "parents": null
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 283,
+        "name": "Pop Rock",
+        "parents": [
+            {
+                "id": 279,
+                "name": "Pop",
+                "parents": null
+            },
+            {
+                "id": 318,
+                "name": "Rock",
+                "parents": null
+            }
+        ]
+    },
+    {
+        "id": 284,
+        "name": "Pop Soul",
+        "parents": [
+            {
+                "id": 279,
+                "name": "Pop",
+                "parents": null
+            },
+            {
+                "id": 341,
+                "name": "Soul",
+                "parents": null
+            }
+        ]
+    },
+    {
+        "id": 285,
+        "name": "Post-Britpop",
+        "parents": [
+            {
+                "id": 20,
+                "name": "Alternative Rock",
+                "parents": [
+                    {
+                        "id": 318,
+                        "name": "Rock",
+                        "parents": null
+                    }
+                ]
+            },
+            {
+                "id": 283,
+                "name": "Pop Rock",
+                "parents": [
+                    {
+                        "id": 279,
+                        "name": "Pop",
+                        "parents": null
+                    },
+                    {
+                        "id": 318,
+                        "name": "Rock",
+                        "parents": null
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 286,
+        "name": "Post-Grunge",
+        "parents": [
+            {
+                "id": 20,
+                "name": "Alternative Rock",
+                "parents": [
+                    {
+                        "id": 318,
+                        "name": "Rock",
+                        "parents": null
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 287,
+        "name": "Post-Hardcore",
+        "parents": [
+            {
+                "id": 187,
+                "name": "Hardcore [Punk]",
+                "parents": [
+                    {
+                        "id": 302,
+                        "name": "Punk",
+                        "parents": null
+                    },
+                    {
+                        "id": 318,
+                        "name": "Rock",
+                        "parents": null
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 289,
+        "name": "Post-Metal",
+        "parents": [
+            {
+                "id": 241,
+                "name": "Metal",
+                "parents": null
+            }
+        ]
+    },
+    {
+        "id": 290,
+        "name": "Post-Punk",
+        "parents": [
+            {
+                "id": 302,
+                "name": "Punk",
+                "parents": null
+            },
+            {
+                "id": 318,
+                "name": "Rock",
+                "parents": null
+            }
+        ]
+    },
+    {
+        "id": 291,
+        "name": "Post-Punk Revival",
+        "parents": [
+            {
+                "id": 206,
+                "name": "Indie Rock",
+                "parents": [
+                    {
+                        "id": 20,
+                        "name": "Alternative Rock",
+                        "parents": [
+                            {
+                                "id": 318,
+                                "name": "Rock",
+                                "parents": null
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": 290,
+                "name": "Post-Punk",
+                "parents": [
+                    {
+                        "id": 302,
+                        "name": "Punk",
+                        "parents": null
+                    },
+                    {
+                        "id": 318,
+                        "name": "Rock",
+                        "parents": null
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 292,
+        "name": "Post-Rock",
+        "parents": [
+            {
+                "id": 318,
+                "name": "Rock",
+                "parents": null
+            }
+        ]
+    },
+    {
+        "id": 293,
+        "name": "Power Pop",
+        "parents": [
+            {
+                "id": 283,
+                "name": "Pop Rock",
+                "parents": [
+                    {
+                        "id": 279,
+                        "name": "Pop",
+                        "parents": null
+                    },
+                    {
+                        "id": 318,
+                        "name": "Rock",
+                        "parents": null
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 294,
+        "name": "Progressive Electronic",
+        "parents": [
+            {
+                "id": 130,
+                "name": "Electronic",
+                "parents": null
+            }
+        ]
+    },
+    {
+        "id": 295,
+        "name": "Progressive Folk",
+        "parents": [
+            {
+                "id": 78,
+                "name": "Contemporary Folk",
+                "parents": [
+                    {
+                        "id": 149,
+                        "name": "Folk",
+                        "parents": null
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 296,
+        "name": "Progressive Metal",
+        "parents": [
+            {
+                "id": 241,
+                "name": "Metal",
+                "parents": null
+            }
+        ]
+    },
+    {
+        "id": 297,
+        "name": "Progressive Pop",
+        "parents": [
+            {
+                "id": 279,
+                "name": "Pop",
+                "parents": null
+            }
+        ]
+    },
+    {
+        "id": 298,
+        "name": "Progressive Rock",
+        "parents": [
+            {
+                "id": 318,
+                "name": "Rock",
+                "parents": null
+            }
+        ]
+    },
+    {
+        "id": 299,
+        "name": "Progressive Soul",
+        "parents": [
+            {
+                "id": 341,
+                "name": "Soul",
+                "parents": null
+            }
+        ]
+    },
+    {
+        "id": 303,
+        "name": "Punk Rock",
+        "parents": [
+            {
+                "id": 302,
+                "name": "Punk",
+                "parents": null
+            },
+            {
+                "id": 318,
+                "name": "Rock",
+                "parents": null
+            }
+        ]
+    },
+    {
+        "id": 305,
+        "name": "Raga Rock",
+        "parents": [
+            {
+                "id": 301,
+                "name": "Psychedelic Rock",
+                "parents": [
+                    {
+                        "id": 300,
+                        "name": "Psychedelia",
+                        "parents": null
+                    },
+                    {
+                        "id": 318,
+                        "name": "Rock",
+                        "parents": null
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 306,
+        "name": "Rage",
+        "parents": [
+            {
+                "id": 368,
+                "name": "Trap",
+                "parents": [
+                    {
+                        "id": 192,
+                        "name": "Hip Hop",
+                        "parents": null
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 307,
+        "name": "Ranchera",
+        "parents": [
+            {
+                "id": 243,
+                "name": "Mexican Music",
+                "parents": [
+                    {
+                        "id": 195,
+                        "name": "Hispanic American Music",
+                        "parents": [
+                            {
+                                "id": 196,
+                                "name": "Hispanic Music",
+                                "parents": [
+                                    {
+                                        "id": 315,
+                                        "name": "Regional Music",
+                                        "parents": null
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 308,
+        "name": "Rap Metal",
+        "parents": [
+            {
+                "id": 18,
+                "name": "Alternative Metal",
+                "parents": [
+                    {
+                        "id": 241,
+                        "name": "Metal",
+                        "parents": null
+                    }
+                ]
+            },
+            {
+                "id": 309,
+                "name": "Rap Rock",
+                "parents": [
+                    {
+                        "id": 318,
+                        "name": "Rock",
+                        "parents": null
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 309,
+        "name": "Rap Rock",
+        "parents": [
+            {
+                "id": 318,
+                "name": "Rock",
+                "parents": null
+            }
+        ]
+    },
+    {
+        "id": 310,
+        "name": "Rare Phonk",
+        "parents": [
+            {
+                "id": 368,
+                "name": "Trap",
+                "parents": [
+                    {
+                        "id": 192,
+                        "name": "Hip Hop",
+                        "parents": null
+                    }
+                ]
+            },
+            {
+                "id": 212,
+                "name": "Instrumental Hip Hop",
+                "parents": [
+                    {
+                        "id": 192,
+                        "name": "Hip Hop",
+                        "parents": null
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 311,
+        "name": "Ratchet Music",
+        "parents": [
+            {
+                "id": 192,
+                "name": "Hip Hop",
+                "parents": null
+            }
+        ]
+    },
+    {
+        "id": 314,
+        "name": "Reggaetón",
+        "parents": [
+            {
+                "id": 195,
+                "name": "Hispanic American Music",
+                "parents": [
+                    {
+                        "id": 196,
+                        "name": "Hispanic Music",
+                        "parents": [
+                            {
+                                "id": 315,
+                                "name": "Regional Music",
+                                "parents": null
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 316,
+        "name": "Rhythm & Blues",
+        "parents": [
+            {
+                "id": 304,
+                "name": "R&B",
+                "parents": null
+            }
+        ]
+    },
+    {
+        "id": 319,
+        "name": "Rock & Roll",
+        "parents": [
+            {
+                "id": 318,
+                "name": "Rock",
+                "parents": null
+            }
+        ]
+    },
+    {
+        "id": 320,
+        "name": "Rock Opera",
+        "parents": [
+            {
+                "id": 318,
+                "name": "Rock",
+                "parents": null
+            },
+            {
+                "id": 106,
+                "name": "Descriptor",
+                "parents": null
+            }
+        ]
+    },
+    {
+        "id": 321,
+        "name": "Rockabilly",
+        "parents": [
+            {
+                "id": 319,
+                "name": "Rock & Roll",
+                "parents": [
+                    {
+                        "id": 318,
+                        "name": "Rock",
+                        "parents": null
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 322,
+        "name": "Roots Rock",
+        "parents": [
+            {
+                "id": 318,
+                "name": "Rock",
+                "parents": null
+            },
+            {
+                "id": 268,
+                "name": "Northern American Music",
+                "parents": [
+                    {
+                        "id": 315,
+                        "name": "Regional Music",
+                        "parents": null
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 323,
+        "name": "Salsa",
+        "parents": [
+            {
+                "id": 195,
+                "name": "Hispanic American Music",
+                "parents": [
+                    {
+                        "id": 196,
+                        "name": "Hispanic Music",
+                        "parents": [
+                            {
+                                "id": 315,
+                                "name": "Regional Music",
+                                "parents": null
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 324,
+        "name": "Salsa Dura",
+        "parents": [
+            {
+                "id": 323,
+                "name": "Salsa",
+                "parents": [
+                    {
+                        "id": 195,
+                        "name": "Hispanic American Music",
+                        "parents": [
+                            {
+                                "id": 196,
+                                "name": "Hispanic Music",
+                                "parents": [
+                                    {
+                                        "id": 315,
+                                        "name": "Regional Music",
+                                        "parents": null
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 325,
+        "name": "Salsa romántica",
+        "parents": [
+            {
+                "id": 323,
+                "name": "Salsa",
+                "parents": [
+                    {
+                        "id": 195,
+                        "name": "Hispanic American Music",
+                        "parents": [
+                            {
+                                "id": 196,
+                                "name": "Hispanic Music",
+                                "parents": [
+                                    {
+                                        "id": 315,
+                                        "name": "Regional Music",
+                                        "parents": null
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 327,
+        "name": "Samba-reggae",
+        "parents": [
+            {
+                "id": 31,
+                "name": "Axé",
+                "parents": [
+                    {
+                        "id": 267,
+                        "name": "Northeastern Brazilian Music",
+                        "parents": [
+                            {
+                                "id": 48,
+                                "name": "Brazilian Music",
+                                "parents": [
+                                    {
+                                        "id": 344,
+                                        "name": "South American Music",
+                                        "parents": [
+                                            {
+                                                "id": 315,
+                                                "name": "Regional Music",
+                                                "parents": null
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 328,
+        "name": "Sample Drill",
+        "parents": [
+            {
+                "id": 261,
+                "name": "New York Drill",
+                "parents": [
+                    {
+                        "id": 115,
+                        "name": "Drill",
+                        "parents": [
+                            {
+                                "id": 368,
+                                "name": "Trap",
+                                "parents": [
+                                    {
+                                        "id": 192,
+                                        "name": "Hip Hop",
+                                        "parents": null
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 346,
+        "name": "Southern Hip Hop",
+        "parents": [
+            {
+                "id": 329,
+                "name": "Scenes & Movements",
+                "parents": null
+            }
+        ]
+    },
+    {
+        "id": 382,
+        "name": "West Coast Hip Hop",
+        "parents": [
+            {
+                "id": 329,
+                "name": "Scenes & Movements",
+                "parents": null
+            }
+        ]
+    },
+    {
+        "id": 330,
+        "name": "Sexy Drill",
+        "parents": [
+            {
+                "id": 261,
+                "name": "New York Drill",
+                "parents": [
+                    {
+                        "id": 115,
+                        "name": "Drill",
+                        "parents": [
+                            {
+                                "id": 368,
+                                "name": "Trap",
+                                "parents": [
+                                    {
+                                        "id": 192,
+                                        "name": "Hip Hop",
+                                        "parents": null
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 331,
+        "name": "Shoegaze",
+        "parents": [
+            {
+                "id": 20,
+                "name": "Alternative Rock",
+                "parents": [
+                    {
+                        "id": 318,
+                        "name": "Rock",
+                        "parents": null
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 332,
+        "name": "Show Tunes",
+        "parents": [
+            {
+                "id": 249,
+                "name": "Musical Theatre and Entertainment",
+                "parents": null
+            }
+        ]
+    },
+    {
+        "id": 334,
+        "name": "Singer-Songwriter",
+        "parents": null
+    },
+    {
+        "id": 335,
+        "name": "Slacker Rock",
+        "parents": [
+            {
+                "id": 206,
+                "name": "Indie Rock",
+                "parents": [
+                    {
+                        "id": 20,
+                        "name": "Alternative Rock",
+                        "parents": [
+                            {
+                                "id": 318,
+                                "name": "Rock",
+                                "parents": null
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 336,
+        "name": "Slowcore",
+        "parents": [
+            {
+                "id": 206,
+                "name": "Indie Rock",
+                "parents": [
+                    {
+                        "id": 20,
+                        "name": "Alternative Rock",
+                        "parents": [
+                            {
+                                "id": 318,
+                                "name": "Rock",
+                                "parents": null
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 337,
+        "name": "Smooth Jazz",
+        "parents": [
+            {
+                "id": 216,
+                "name": "Jazz",
+                "parents": null
+            }
+        ]
+    },
+    {
+        "id": 338,
+        "name": "Smooth Soul",
+        "parents": [
+            {
+                "id": 341,
+                "name": "Soul",
+                "parents": null
+            }
+        ]
+    },
+    {
+        "id": 339,
+        "name": "Soft Rock",
+        "parents": [
+            {
+                "id": 283,
+                "name": "Pop Rock",
+                "parents": [
+                    {
+                        "id": 279,
+                        "name": "Pop",
+                        "parents": null
+                    },
+                    {
+                        "id": 318,
+                        "name": "Rock",
+                        "parents": null
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 340,
+        "name": "Sophisti-Pop",
+        "parents": [
+            {
+                "id": 279,
+                "name": "Pop",
+                "parents": null
+            }
+        ]
+    },
+    {
+        "id": 341,
+        "name": "Soul",
+        "parents": null
+    },
+    {
+        "id": 342,
+        "name": "Sound Collage",
+        "parents": [
+            {
+                "id": 142,
+                "name": "Experimental",
+                "parents": null
+            }
+        ]
+    },
+    {
+        "id": 347,
+        "name": "Space Ambient",
+        "parents": [
+            {
+                "id": 22,
+                "name": "Ambient",
+                "parents": null
+            },
+            {
+                "id": 130,
+                "name": "Electronic",
+                "parents": null
+            }
+        ]
+    },
+    {
+        "id": 349,
+        "name": "Space Rock",
+        "parents": [
+            {
+                "id": 301,
+                "name": "Psychedelic Rock",
+                "parents": [
+                    {
+                        "id": 300,
+                        "name": "Psychedelia",
+                        "parents": null
+                    },
+                    {
+                        "id": 318,
+                        "name": "Rock",
+                        "parents": null
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 350,
+        "name": "Space Rock Revival",
+        "parents": [
+            {
+                "id": 251,
+                "name": "Neo-Psychedelia",
+                "parents": [
+                    {
+                        "id": 300,
+                        "name": "Psychedelia",
+                        "parents": null
+                    }
+                ]
+            },
+            {
+                "id": 349,
+                "name": "Space Rock",
+                "parents": [
+                    {
+                        "id": 301,
+                        "name": "Psychedelic Rock",
+                        "parents": [
+                            {
+                                "id": 300,
+                                "name": "Psychedelia",
+                                "parents": null
+                            },
+                            {
+                                "id": 318,
+                                "name": "Rock",
+                                "parents": null
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 351,
+        "name": "Speed Metal",
+        "parents": [
+            {
+                "id": 189,
+                "name": "Heavy Metal",
+                "parents": [
+                    {
+                        "id": 241,
+                        "name": "Metal",
+                        "parents": null
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 352,
+        "name": "Spoken Word",
+        "parents": null
+    },
+    {
+        "id": 353,
+        "name": "Swamp Rock",
+        "parents": [
+            {
+                "id": 322,
+                "name": "Roots Rock",
+                "parents": [
+                    {
+                        "id": 268,
+                        "name": "Northern American Music",
+                        "parents": [
+                            {
+                                "id": 315,
+                                "name": "Regional Music",
+                                "parents": null
+                            }
+                        ]
+                    },
+                    {
+                        "id": 318,
+                        "name": "Rock",
+                        "parents": null
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 354,
+        "name": "Symphonic Prog",
+        "parents": [
+            {
+                "id": 298,
+                "name": "Progressive Rock",
+                "parents": [
+                    {
+                        "id": 318,
+                        "name": "Rock",
+                        "parents": null
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 355,
+        "name": "Symphonic Rock",
+        "parents": [
+            {
+                "id": 318,
+                "name": "Rock",
+                "parents": null
+            }
+        ]
+    },
+    {
+        "id": 356,
+        "name": "Synth Funk",
+        "parents": [
+            {
+                "id": 157,
+                "name": "Funk",
+                "parents": [
+                    {
+                        "id": 304,
+                        "name": "R&B",
+                        "parents": null
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 357,
+        "name": "Synth Punk",
+        "parents": [
+            {
+                "id": 302,
+                "name": "Punk",
+                "parents": null
+            },
+            {
+                "id": 130,
+                "name": "Electronic",
+                "parents": null
+            }
+        ]
+    },
+    {
+        "id": 358,
+        "name": "Synthpop",
+        "parents": [
+            {
+                "id": 279,
+                "name": "Pop",
+                "parents": null
+            },
+            {
+                "id": 130,
+                "name": "Electronic",
+                "parents": null
+            }
+        ]
+    },
+    {
+        "id": 359,
+        "name": "Synthwave",
+        "parents": [
+            {
+                "id": 130,
+                "name": "Electronic",
+                "parents": null
+            }
+        ]
+    },
+    {
+        "id": 360,
+        "name": "Tape Music",
+        "parents": [
+            {
+                "id": 142,
+                "name": "Experimental",
+                "parents": null
+            }
+        ]
+    },
+    {
+        "id": 361,
+        "name": "Tech House",
+        "parents": [
+            {
+                "id": 198,
+                "name": "House",
+                "parents": [
+                    {
+                        "id": 131,
+                        "name": "Electronic Dance Music",
+                        "parents": [
+                            {
+                                "id": 92,
+                                "name": "Dance",
+                                "parents": null
+                            },
+                            {
+                                "id": 130,
+                                "name": "Electronic",
+                                "parents": null
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 362,
+        "name": "Technical Death Metal",
+        "parents": [
+            {
+                "id": 100,
+                "name": "Death Metal",
+                "parents": [
+                    {
+                        "id": 241,
+                        "name": "Metal",
+                        "parents": null
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 364,
+        "name": "Television Music",
+        "parents": [
+            {
+                "id": 343,
+                "name": "Soundtrack",
+                "parents": [
+                    {
+                        "id": 106,
+                        "name": "Descriptor",
+                        "parents": null
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 367,
+        "name": "Traditional Pop",
+        "parents": [
+            {
+                "id": 279,
+                "name": "Pop",
+                "parents": null
+            }
+        ]
+    },
+    {
+        "id": 368,
+        "name": "Trap",
+        "parents": [
+            {
+                "id": 192,
+                "name": "Hip Hop",
+                "parents": null
+            }
+        ]
+    },
+    {
+        "id": 369,
+        "name": "Trap Metal",
+        "parents": [
+            {
+                "id": 368,
+                "name": "Trap",
+                "parents": [
+                    {
+                        "id": 192,
+                        "name": "Hip Hop",
+                        "parents": null
+                    }
+                ]
+            },
+            {
+                "id": 184,
+                "name": "Hardcore Hip Hop",
+                "parents": [
+                    {
+                        "id": 192,
+                        "name": "Hip Hop",
+                        "parents": null
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 370,
+        "name": "Trap Soul",
+        "parents": [
+            {
+                "id": 368,
+                "name": "Trap",
+                "parents": [
+                    {
+                        "id": 192,
+                        "name": "Hip Hop",
+                        "parents": null
+                    }
+                ]
+            },
+            {
+                "id": 79,
+                "name": "Contemporary R&B",
+                "parents": [
+                    {
+                        "id": 304,
+                        "name": "R&B",
+                        "parents": null
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 371,
+        "name": "Tread",
+        "parents": [
+            {
+                "id": 368,
+                "name": "Trap",
+                "parents": [
+                    {
+                        "id": 192,
+                        "name": "Hip Hop",
+                        "parents": null
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 373,
+        "name": "Trip Hop",
+        "parents": [
+            {
+                "id": 113,
+                "name": "Downtempo",
+                "parents": [
+                    {
+                        "id": 66,
+                        "name": "Chillout",
+                        "parents": [
+                            {
+                                "id": 130,
+                                "name": "Electronic",
+                                "parents": null
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 374,
+        "name": "UK Funky",
+        "parents": [
+            {
+                "id": 131,
+                "name": "Electronic Dance Music",
+                "parents": [
+                    {
+                        "id": 92,
+                        "name": "Dance",
+                        "parents": null
+                    },
+                    {
+                        "id": 130,
+                        "name": "Electronic",
+                        "parents": null
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 376,
+        "name": "UK Hip Hop",
+        "parents": [
+            {
+                "id": 329,
+                "name": "Scenes & Movements",
+                "parents": null
+            }
+        ]
+    },
+    {
+        "id": 377,
+        "name": "Vallenato",
+        "parents": [
+            {
+                "id": 195,
+                "name": "Hispanic American Music",
+                "parents": [
+                    {
+                        "id": 196,
+                        "name": "Hispanic Music",
+                        "parents": [
+                            {
+                                "id": 315,
+                                "name": "Regional Music",
+                                "parents": null
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": 59,
+                "name": "Caribbean Music",
+                "parents": [
+                    {
+                        "id": 315,
+                        "name": "Regional Music",
+                        "parents": null
+                    }
+                ]
+            },
+            {
+                "id": 344,
+                "name": "South American Music",
+                "parents": [
+                    {
+                        "id": 315,
+                        "name": "Regional Music",
+                        "parents": null
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 379,
+        "name": "Vaporwave",
+        "parents": [
+            {
+                "id": 378,
+                "name": "Vapor",
+                "parents": [
+                    {
+                        "id": 130,
+                        "name": "Electronic",
+                        "parents": null
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 380,
+        "name": "Video Game Music",
+        "parents": [
+            {
+                "id": 343,
+                "name": "Soundtrack",
+                "parents": [
+                    {
+                        "id": 106,
+                        "name": "Descriptor",
+                        "parents": null
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 381,
+        "name": "Vocal Jazz",
+        "parents": [
+            {
+                "id": 216,
+                "name": "Jazz",
+                "parents": null
+            }
+        ]
+    },
+    {
+        "id": 384,
+        "name": "Witch House",
+        "parents": [
+            {
+                "id": 130,
+                "name": "Electronic",
+                "parents": null
+            }
+        ]
+    },
+    {
+        "id": 98,
+        "name": "Dark Plugg",
+        "parents": [
+            {
+                "id": 276,
+                "name": "Plugg",
+                "parents": [
+                    {
+                        "id": 368,
+                        "name": "Trap",
+                        "parents": [
+                            {
+                                "id": 192,
+                                "name": "Hip Hop",
+                                "parents": null
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 117,
+        "name": "Drone Metal",
+        "parents": [
+            {
+                "id": 241,
+                "name": "Metal",
+                "parents": null
+            }
+        ]
+    },
+    {
+        "id": 265,
+        "name": "Noise Rock",
+        "parents": [
+            {
+                "id": 318,
+                "name": "Rock",
+                "parents": null
+            }
+        ]
+    },
+    {
+        "id": 263,
+        "name": "Noise",
+        "parents": [
+            {
+                "id": 142,
+                "name": "Experimental",
+                "parents": null
+            },
+            {
+                "id": 208,
+                "name": "Industrial & Noise",
+                "parents": null
+            }
+        ]
+    },
+    {
+        "id": 95,
+        "name": "Dark Ambient",
+        "parents": [
+            {
+                "id": 22,
+                "name": "Ambient",
+                "parents": null
+            },
+            {
+                "id": 288,
+                "name": "Post-Industrial",
+                "parents": [
+                    {
+                        "id": 208,
+                        "name": "Industrial & Noise",
+                        "parents": null
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 223,
+        "name": "Jazzstep",
+        "parents": [
+            {
+                "id": 118,
+                "name": "Drum and Bass",
+                "parents": [
+                    {
+                        "id": 131,
+                        "name": "Electronic Dance Music",
+                        "parents": [
+                            {
+                                "id": 92,
+                                "name": "Dance",
+                                "parents": null
+                            },
+                            {
+                                "id": 130,
+                                "name": "Electronic",
+                                "parents": null
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 372,
+        "name": "Tribal House",
+        "parents": [
+            {
+                "id": 198,
+                "name": "House",
+                "parents": [
+                    {
+                        "id": 131,
+                        "name": "Electronic Dance Music",
+                        "parents": [
+                            {
+                                "id": 92,
+                                "name": "Dance",
+                                "parents": null
+                            },
+                            {
+                                "id": 130,
+                                "name": "Electronic",
+                                "parents": null
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 116,
+        "name": "Drill and Bass",
+        "parents": [
+            {
+                "id": 202,
+                "name": "IDM",
+                "parents": [
+                    {
+                        "id": 130,
+                        "name": "Electronic",
+                        "parents": null
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 246,
+        "name": "Modern Classical",
+        "parents": [
+            {
+                "id": 383,
+                "name": "Western Classical Music",
+                "parents": [
+                    {
+                        "id": 73,
+                        "name": "Classical Music",
+                        "parents": null
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 348,
+        "name": "Space Disco",
+        "parents": [
+            {
+                "id": 127,
+                "name": "Electro-Disco",
+                "parents": [
+                    {
+                        "id": 131,
+                        "name": "Electronic Dance Music",
+                        "parents": [
+                            {
+                                "id": 92,
+                                "name": "Dance",
+                                "parents": null
+                            },
+                            {
+                                "id": 130,
+                                "name": "Electronic",
+                                "parents": null
+                            }
+                        ]
+                    },
+                    {
+                        "id": 111,
+                        "name": "Disco",
+                        "parents": [
+                            {
+                                "id": 92,
+                                "name": "Dance",
+                                "parents": null
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 191,
+        "name": "Hi-NRG",
+        "parents": [
+            {
+                "id": 127,
+                "name": "Electro-Disco",
+                "parents": [
+                    {
+                        "id": 111,
+                        "name": "Disco",
+                        "parents": [
+                            {
+                                "id": 92,
+                                "name": "Dance",
+                                "parents": null
+                            }
+                        ]
+                    },
+                    {
+                        "id": 131,
+                        "name": "Electronic Dance Music",
+                        "parents": [
+                            {
+                                "id": 92,
+                                "name": "Dance",
+                                "parents": null
+                            },
+                            {
+                                "id": 130,
+                                "name": "Electronic",
+                                "parents": null
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 70,
+        "name": "Chopped and Screwed",
+        "parents": [
+            {
+                "id": 192,
+                "name": "Hip Hop",
+                "parents": null
+            }
+        ]
+    }
+]

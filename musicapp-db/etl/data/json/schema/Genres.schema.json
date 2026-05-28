@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/genres.schema.json",
+  "title": "Genres",
+  "description": "Collection of music genres with hierarchical parent relationships",
+  "type": "array",
+  "items": {
+    "$ref": "#/$defs/Genre"
+  },
+  "$defs": {
+    "Genre": {
+      "type": "object",
+      "description": "A music genre",
+      "properties": {
+        "id": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "description": "The unique identifier for the genre (nullable for new objects)"
+        },
+        "name": {
+          "type": "string",
+          "description": "The name of the genre",
+          "minLength": 1,
+          "maxLength": 255
+        },
+        "parents": {
+          "oneOf": [
+            {
+              "type": "null",
+              "description": "Top-level genre with no parents"
+            },
+            {
+              "type": "array",
+              "description": "Parent genres",
+              "items": {
+                "$ref": "#/$defs/Genre"
+              },
+              "minItems": 1
+            }
+          ]
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "parents"
+      ],
+      "additionalProperties": false
+    }
+  }
+}
