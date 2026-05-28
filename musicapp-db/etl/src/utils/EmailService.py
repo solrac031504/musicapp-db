@@ -1,6 +1,6 @@
 import os
 import smtplib
-import time
+from datetime import datetime
 from email.message import EmailMessage
 
 
@@ -40,6 +40,6 @@ class EmailService:
         """Formats and sends a package failure email"""
         subject = f"Package {package_name} failure"
 
-        body = f"Package: {package_name}\nTime: {time.time()}" + (f"\nStep: {step}" if step else "") + (f"\nError: {error}" if error else "")
+        body = f"Package: {package_name}\nTime: {datetime.now().strftime("%Y-%m-%d %H:%M:%S")}" + (f"\nStep: {step}" if step else "") + (f"\nError: {error}" if error else "")
 
         self._send_message(subject, body)
