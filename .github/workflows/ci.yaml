@@ -72,10 +72,14 @@ jobs:
 
       - name: Lint with flake8
         run: |
-          flake8 musicapp-db/etl/ \
+          flake8 etl/ \
             --max-line-length=120 \
             --ignore=E501
 
       - name: Type-check with pyright
         run: |
           pyright etl/
+
+      - name: Deactivate virtual environment
+        run: deactivate
+        if: always()
