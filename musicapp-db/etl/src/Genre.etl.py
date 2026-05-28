@@ -264,10 +264,10 @@ class GenreETLPipeline:
         try:
             with self.engine.begin() as conn:
                 logger.info("Merging stage.Genre...")
-                conn.execute(text("CALL stage.genre_merge();"))
+                conn.execute(text("CALL stage.genre_merge(NULL, NULL, NULL);"))
 
                 logger.info("Merging stage.GenreHierarchy...")
-                conn.execute(text("CALL stage.genre_hierarchy_merge();"))
+                conn.execute(text("CALL stage.genre_hierarchy_merge(NULL, NULL, NULL);"))
 
             logger.info("Merge completed successfully")
             return True
