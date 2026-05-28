@@ -79,7 +79,3 @@ jobs:
       - name: Type-check with pyright
         run: |
           pyright etl/
-
-      - name: Deactivate virtual environment
-        run: deactivate
-        if: always()
