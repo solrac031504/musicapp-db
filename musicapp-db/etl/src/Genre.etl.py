@@ -264,10 +264,10 @@ class GenreETLPipeline:
         try:
             with self.engine.begin() as conn:
                 logger.info("Merging stage.Genre...")
-                conn.execute(text("CALL stage.genre_merge();"))
+                conn.execute(text("CALL stage.genre_merge(NULL, NULL, NULL);"))
 
                 logger.info("Merging stage.GenreHierarchy...")
-                conn.execute(text("CALL stage.genre_hierarchy_merge();"))
+                conn.execute(text("CALL stage.genre_hierarchy_merge(NULL, NULL, NULL);"))
 
             logger.info("Merge completed successfully")
             return True
@@ -289,18 +289,19 @@ class GenreETLPipeline:
         self._step = "run_etl"
         logger.info("Starting Genre ETL...")
 
-        steps: list[tuple[str, bool]] = [
-            ("connect_to_database", self.connect_to_database()),
-            ("extract_from_json", self.extract_from_json(json_file_path)),
-            ("truncate_stage_tables", self.truncate_stage_tables()),
-            ("load_to_stage_tables", self.load_to_stage_tables()),
-            ("merge_to_final_tables", self.merge_to_final_tables()),
-        ]
+        def _aborted_message() -> None:
+            logger.error(f"ETL aborted at step: {self._step}")
 
-        for step_name, result in steps:
-            if not result:
-                logger.error(f"ETL aborted at step: {step_name}")
-                return False
+        if not self.connect_to_database():
+            _aborted_message()
+        elif not self.extract_from_json(json_file_path=json_file_path):
+            _aborted_message()
+        elif not self.truncate_stage_tables():
+            _aborted_message()
+        elif not self.load_to_stage_tables():
+            _aborted_message()
+        elif not self.merge_to_final_tables():
+            _aborted_message()
 
         logger.info("Genre ETL completed successfully")
         return True
@@ -323,6 +324,7 @@ if __name__ == "__main__":
         os.getcwd(),
         "etl",
         "data",
+        "json",
         "Genres.json",
     )
 
