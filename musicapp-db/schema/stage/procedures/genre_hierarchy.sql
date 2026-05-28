@@ -28,11 +28,11 @@ BEGIN
     INSERT INTO genre_hierarchy
     (
         genre_id
-        , genre_hierarchy_id
+        , parent_genre_id
     )
     SELECT 
         src.genre_id
-        , src.genre_hierarchy_id
+        , src.parent_genre_id
     FROM 
         stage.genre_hierarchy AS src
     WHERE

@@ -33,7 +33,7 @@ BEGIN
     SELECT
         src.genre_id
         , src.genre_name
-        , 
+        , '' AS "description"
     FROM
         stage.genre AS src
     WHERE
