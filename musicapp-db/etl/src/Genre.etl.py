@@ -294,13 +294,13 @@ class GenreETLPipeline:
 
         if not self.connect_to_database():
             _aborted_message()
-        if not self.extract_from_json(json_file_path=json_file_path):
+        elif not self.extract_from_json(json_file_path=json_file_path):
             _aborted_message()
-        if not self.truncate_stage_tables():
+        elif not self.truncate_stage_tables():
             _aborted_message()
-        if not self.load_to_stage_tables():
+        elif not self.load_to_stage_tables():
             _aborted_message()
-        if not self.merge_to_final_tables():
+        elif not self.merge_to_final_tables():
             _aborted_message()
 
         logger.info("Genre ETL completed successfully")
