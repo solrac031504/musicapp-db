@@ -32,10 +32,12 @@ class GenreObject(TypedDict, total=False):
     name: str
     parents: list["GenreObject"]
 
+
 @dataclass
 class GenreRow(TypedDict):
     genre_id: int
     genre_name: str
+
 
 @dataclass
 class HierarchyRow(TypedDict):
@@ -288,10 +290,10 @@ class GenreETLPipeline:
         logger.info("Starting Genre ETL...")
 
         steps: list[tuple[str, bool]] = [
-            ("connect_to_database",   self.connect_to_database()),
-            ("extract_from_json",     self.extract_from_json(json_file_path)),
+            ("connect_to_database", self.connect_to_database()),
+            ("extract_from_json", self.extract_from_json(json_file_path)),
             ("truncate_stage_tables", self.truncate_stage_tables()),
-            ("load_to_stage_tables",  self.load_to_stage_tables()),
+            ("load_to_stage_tables", self.load_to_stage_tables()),
             ("merge_to_final_tables", self.merge_to_final_tables()),
         ]
 

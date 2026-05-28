@@ -3,6 +3,7 @@ import smtplib
 import time
 from email.message import EmailMessage
 
+
 class EmailService:
     """Notification email service"""
 
@@ -13,7 +14,7 @@ class EmailService:
 
         if not email_from or not email_to or not app_password:
             raise ValueError("On or more keys are missing from .env. Required keys are \"EMAIL_FROM\", \"EMAIL_TO\", and \"APP_PASSWORD\"")
-        
+
         self._email_from = email_from
         self._email_to = email_to
         self._app_password = app_password
